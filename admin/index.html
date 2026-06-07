@@ -6,87 +6,71 @@
     <title>Админ панел | Граматиково</title>
     <style>
       :root {
-        color-scheme: dark;
-        --admin-bg: #0e1412;
-        --admin-panel: #151d1a;
-        --admin-panel-soft: #1c2723;
-        --admin-field: #0f1715;
-        --admin-border: rgba(224, 232, 225, 0.16);
-        --admin-text: #eef5ef;
-        --admin-muted: #a7b6ad;
-        --admin-accent: #4fd19b;
-        --admin-accent-strong: #20bf7a;
+        color-scheme: light;
+        --admin-bg: #f4f1ea;
+        --admin-ink: #17201b;
+        --admin-muted: #66736b;
+        --admin-panel: #ffffff;
+        --admin-panel-soft: #f8f7f2;
+        --admin-header: #102018;
+        --admin-border: rgba(23, 32, 27, 0.14);
+        --admin-accent: #2f9f68;
+        --admin-focus: rgba(47, 159, 104, 0.22);
       }
 
       html,
       body,
       #nc-root {
         min-height: 100%;
-        background: var(--admin-bg) !important;
+        background:
+          linear-gradient(180deg, rgba(16, 32, 24, 0.08), transparent 220px),
+          var(--admin-bg) !important;
       }
 
       body {
         margin: 0;
-        color: var(--admin-text) !important;
+        color: var(--admin-ink) !important;
         font-family:
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif !important;
       }
 
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        background:
-          linear-gradient(145deg, rgba(79, 209, 155, 0.12), transparent 38%),
-          radial-gradient(circle at 80% 8%, rgba(166, 95, 69, 0.2), transparent 34%),
-          var(--admin-bg);
-      }
-
       [class*="Toolbar"],
       [class*="TopBar"],
       [class*="EditorToolbar"] {
-        background: rgba(15, 23, 21, 0.92) !important;
-        border-color: var(--admin-border) !important;
-        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.32) !important;
-        backdrop-filter: blur(14px);
+        min-height: 58px !important;
+        color: #fff !important;
+        background: var(--admin-header) !important;
+        border-color: rgba(255, 255, 255, 0.08) !important;
+        box-shadow: 0 14px 34px rgba(16, 32, 24, 0.2) !important;
       }
 
       [class*="EditorControl"],
       [class*="ObjectControl"],
       [class*="NestedObject"],
-      [class*="ListControl"],
-      [class*="Card"],
-      [class*="Collection"],
-      [class*="EntryListing"],
-      [class*="Sidebar"] {
-        color: var(--admin-text) !important;
-        background: rgba(21, 29, 26, 0.94) !important;
-        border-color: var(--admin-border) !important;
+      [class*="ListControl"] {
+        color: var(--admin-ink) !important;
+        background: var(--admin-panel) !important;
+        border: 1px solid var(--admin-border) !important;
         border-radius: 8px !important;
-        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22) !important;
+        box-shadow: 0 12px 34px rgba(23, 32, 27, 0.08) !important;
+      }
+
+      [class*="ObjectControl"] > div,
+      [class*="NestedObject"] > div {
+        border-color: var(--admin-border) !important;
+      }
+
+      [class*="ObjectControl"] [class*="Control"] {
+        margin-bottom: 18px !important;
       }
 
       [class*="ControlLabel"],
-      label,
-      legend,
-      h1,
-      h2,
-      h3,
-      h4,
-      p,
-      span,
-      a {
-        color: inherit !important;
-        letter-spacing: 0 !important;
-      }
-
-      label,
-      [class*="ControlLabel"] {
+      label {
         color: var(--admin-muted) !important;
         font-size: 0.78rem !important;
-        font-weight: 750 !important;
+        font-weight: 760 !important;
+        letter-spacing: 0 !important;
         text-transform: uppercase;
       }
 
@@ -94,33 +78,28 @@
       textarea,
       select {
         min-height: 46px !important;
-        color: var(--admin-text) !important;
-        background: var(--admin-field) !important;
-        border: 1px solid var(--admin-border) !important;
+        color: var(--admin-ink) !important;
+        background: #fff !important;
+        border: 1px solid rgba(23, 32, 27, 0.18) !important;
         border-radius: 7px !important;
-        box-shadow: none !important;
+        box-shadow: inset 0 1px 0 rgba(23, 32, 27, 0.04) !important;
       }
 
       textarea {
-        min-height: 110px !important;
+        min-height: 118px !important;
       }
 
       input:focus,
       textarea:focus,
       select:focus {
         border-color: var(--admin-accent) !important;
-        outline: 3px solid rgba(79, 209, 155, 0.18) !important;
+        outline: 3px solid var(--admin-focus) !important;
       }
 
       button,
       [role="button"] {
         border-radius: 7px !important;
-        font-weight: 750 !important;
-      }
-
-      button:not([disabled]),
-      [role="button"]:not([aria-disabled="true"]) {
-        border-color: var(--admin-border) !important;
+        font-weight: 760 !important;
       }
 
       button[class*="primary"],
@@ -128,15 +107,34 @@
       [class*="Published"],
       [class*="publish"] {
         color: #062016 !important;
-        background: var(--admin-accent) !important;
+        background: #4fd19b !important;
       }
 
       a {
-        color: var(--admin-accent) !important;
+        color: #1f7a4d !important;
       }
 
-      svg {
-        color: currentColor !important;
+      @media (min-width: 980px) {
+        [class*="ObjectControl"] > div:last-child,
+        [class*="NestedObject"] > div:last-child {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 18px 20px !important;
+          align-items: start;
+        }
+
+        [class*="ObjectControl"] > div:last-child > *,
+        [class*="NestedObject"] > div:last-child > * {
+          min-width: 0;
+          margin: 0 !important;
+        }
+
+        [class*="ObjectControl"] > div:last-child > *:has(textarea),
+        [class*="ObjectControl"] > div:last-child > *:has([class*="ListControl"]),
+        [class*="NestedObject"] > div:last-child > *:has(textarea),
+        [class*="NestedObject"] > div:last-child > *:has([class*="ListControl"]) {
+          grid-column: 1 / -1;
+        }
       }
     </style>
   </head>
