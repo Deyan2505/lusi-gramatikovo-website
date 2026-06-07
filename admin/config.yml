@@ -9,6 +9,9 @@ public_folder: "/assets/uploads"
 
 locale: "bg"
 
+editor:
+  preview: false
+
 collections:
   - name: "apartment"
     label: "Апартамент"
