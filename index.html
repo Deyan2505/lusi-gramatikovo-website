@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Граматиково | Апартамент и Бистро Колибаре</title>
+    <meta
+      name="description"
+      content="Апартамент за нощувки и Бистро Колибаре в село Граматиково, Странджа."
+    />
+    <style>
+      :root {
+        --ink: #17201b;
+        --paper: #fbfaf6;
+        --surface: #ffffff;
+        --forest: #27533f;
+        --clay: #a65f45;
+        --line: rgba(23, 32, 27, 0.16);
+        --shadow: 0 22px 70px rgba(23, 32, 27, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100dvh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        color: var(--ink);
+        background:
+          linear-gradient(rgba(23, 32, 27, 0.7), rgba(23, 32, 27, 0.42)),
+          url("Апартамент/10264727_138078806_big.jpg") center / cover;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        padding: 56px 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 18px;
+        color: #fff;
+        font-size: clamp(2.4rem, 7vw, 5.4rem);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 620px;
+        margin: 0 0 30px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.12rem;
+      }
+
+      .links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      a {
+        min-height: 116px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        border-radius: 8px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.13);
+        box-shadow: var(--shadow);
+        text-decoration: none;
+        backdrop-filter: blur(10px);
+        transition:
+          transform 180ms ease,
+          background 180ms ease;
+      }
+
+      a:hover,
+      a:focus-visible {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.2);
+        outline: none;
+      }
+
+      strong {
+        font-size: 1.45rem;
+        line-height: 1.1;
+      }
+
+      span {
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      @media (max-width: 680px) {
+        body {
+          place-items: end center;
+        }
+
+        main {
+          padding-bottom: 28px;
+        }
+
+        .links {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Граматиково</h1>
+      <p>Изберете страница за апартамента за нощувки или за Бистро Колибаре.</p>
+      <nav class="links" aria-label="Основни страници">
+        <a href="/Апартамент/">
+          <strong>Апартамент</strong>
+          <span>Нощувки в центъра на Граматиково</span>
+        </a>
+        <a href="/Ресторант/">
+          <strong>Бистро Колибаре</strong>
+          <span>Домашна кухня и скара в Странджа</span>
+        </a>
+      </nav>
+    </main>
+  </body>
+</html>
