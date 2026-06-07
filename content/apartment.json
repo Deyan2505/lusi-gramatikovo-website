@@ -1,0 +1,106 @@
+{
+  "contact": {
+    "whatsappNumber": "359888029267",
+    "whatsappDisplay": "+359 888 029 267"
+  },
+  "pricing": {
+    "currency": "EUR",
+    "singleOccupancy": 35,
+    "multiOccupancyPerPerson": 20,
+    "maxGuests": 4
+  },
+  "links": {
+    "listing": "https://www.alo.bg/apartament-v-centara-na-gramatikovo-10264727",
+    "bistro": "https://bistro-kolibare.netlify.app/"
+  },
+  "gallery": [
+    {
+      "image": "10264727_138078789_big.jpg",
+      "captionBg": "Дневна с излаз към терасата",
+      "captionEn": "Living room with terrace access",
+      "altBg": "Дневна с телевизор, диван и врата към тераса",
+      "altEn": "Living room with TV, sofa and terrace door"
+    },
+    {
+      "image": "10264727_138078790_big.jpg",
+      "captionBg": "Кът за хранене и разтегателен диван",
+      "captionEn": "Dining area and sofa bed",
+      "altBg": "Кът за хранене и разтегателен диван в дневната",
+      "altEn": "Dining area and sofa bed in the living room"
+    },
+    {
+      "image": "10264727_138078792_big.jpg",
+      "captionBg": "Оборудвана кухня",
+      "captionEn": "Equipped kitchen",
+      "altBg": "Кухня с мивка, пералня, шкафове и фурна",
+      "altEn": "Kitchen with sink, washing machine, cabinets and oven"
+    },
+    {
+      "image": "10264727_138078793_big.jpg",
+      "captionBg": "Спалня с две единични легла",
+      "captionEn": "Bedroom with two single beds",
+      "altBg": "Спалня с две единични легла и гардероб",
+      "altEn": "Bedroom with two single beds and wardrobe"
+    },
+    {
+      "image": "10264727_138078804_big.jpg",
+      "captionBg": "Дневна зона с климатик",
+      "captionEn": "Living area with air conditioning",
+      "altBg": "Дневна зона с разтегнат диван, маса и климатик",
+      "altEn": "Living area with sofa bed, table and air conditioning"
+    },
+    {
+      "image": "10264727_138078796_big.jpg",
+      "captionBg": "Гледка от терасата към площада",
+      "captionEn": "Terrace view toward the square",
+      "altBg": "Гледка от терасата към центъра на Граматиково и църквата",
+      "altEn": "Terrace view toward central Gramatikovo and the church"
+    },
+    {
+      "image": "10264727_138078806_big.jpg",
+      "captionBg": "Залез над Граматиково",
+      "captionEn": "Sunset over Gramatikovo",
+      "altBg": "Розов залез над Граматиково",
+      "altEn": "Pink sunset over Gramatikovo"
+    },
+    {
+      "image": "10264727_138078802_big.jpg",
+      "captionBg": "Природна разходка край водопад",
+      "captionEn": "Nature walk near a waterfall",
+      "altBg": "Водопад и зеленина в района на Странджа",
+      "altEn": "Waterfall and greenery in the Strandzha area"
+    }
+  ],
+  "bistroPhotos": [
+    {
+      "image": "bistro-kolibare-facade.jpg",
+      "altBg": "Фасада на Бистро Колибаре с външни маси и зелени чадъри",
+      "altEn": "Bistro Kolibare facade with outdoor tables and green umbrellas"
+    },
+    {
+      "image": "bistro-kolibare-veranda.jpg",
+      "altBg": "Покрита веранда с дървена маса пред Бистро Колибаре",
+      "altEn": "Covered veranda with a wooden table at Bistro Kolibare"
+    },
+    {
+      "image": "bistro-kolibare-dish.jpg",
+      "altBg": "Домашна гозба в глинен съд от Бистро Колибаре",
+      "altEn": "Homemade dish in a clay pot from Bistro Kolibare"
+    },
+    {
+      "image": "bistro-kolibare-interior.jpg",
+      "altBg": "Интериор на Бистро Колибаре с маси и бар",
+      "altEn": "Bistro Kolibare interior with tables and bar"
+    },
+    {
+      "image": "bistro-kolibare-grill.jpg",
+      "altBg": "Скара с пържени картофи и млечен сос",
+      "altEn": "Grilled sausages with fried potatoes and yoghurt sauce"
+    },
+    {
+      "image": "bistro-kolibare-table.jpg",
+      "altBg": "Подредена дълга маса със салати в Бистро Колибаре",
+      "altEn": "Long table set with salads at Bistro Kolibare"
+    }
+  ]
+}

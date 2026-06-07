@@ -1,0 +1,104 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "bg"
+
+collections:
+  - name: "apartment"
+    label: "Апартамент"
+    files:
+      - name: "apartment_content"
+        label: "Данни за апартамента"
+        file: "content/apartment.json"
+        format: "json"
+        fields:
+          - label: "Контакт"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp номер без +", name: "whatsappNumber", widget: "string" }
+              - { label: "Показване на номера", name: "whatsappDisplay", widget: "string" }
+          - label: "Цени"
+            name: "pricing"
+            widget: "object"
+            fields:
+              - { label: "Валута", name: "currency", widget: "string", default: "EUR" }
+              - { label: "Единично настаняване", name: "singleOccupancy", widget: "number", value_type: "int" }
+              - { label: "Цена на човек при 2+ гости", name: "multiOccupancyPerPerson", widget: "number", value_type: "int" }
+              - { label: "Максимален брой гости", name: "maxGuests", widget: "number", value_type: "int" }
+          - label: "Линкове"
+            name: "links"
+            widget: "object"
+            fields:
+              - { label: "Обява", name: "listing", widget: "string" }
+              - { label: "Сайт на бистрото", name: "bistro", widget: "string" }
+          - label: "Снимки на апартамента"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.captionBg}}"
+            fields:
+              - { label: "Снимка", name: "image", widget: "image" }
+              - { label: "Надпис BG", name: "captionBg", widget: "string" }
+              - { label: "Надпис EN", name: "captionEn", widget: "string", required: false }
+              - { label: "Alt текст BG", name: "altBg", widget: "string" }
+              - { label: "Alt текст EN", name: "altEn", widget: "string", required: false }
+          - label: "Снимки на Бистро Колибаре в страницата на апартамента"
+            name: "bistroPhotos"
+            widget: "list"
+            summary: "{{fields.altBg}}"
+            fields:
+              - { label: "Снимка", name: "image", widget: "image" }
+              - { label: "Alt текст BG", name: "altBg", widget: "string" }
+              - { label: "Alt текст EN", name: "altEn", widget: "string", required: false }
+
+  - name: "bistro"
+    label: "Бистро Колибаре"
+    files:
+      - name: "bistro_content"
+        label: "Данни за бистрото"
+        file: "content/bistro.json"
+        format: "json"
+        fields:
+          - label: "Контакт"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string" }
+              - { label: "Показване на телефона", name: "phoneDisplay", widget: "string" }
+              - { label: "WhatsApp номер без +", name: "whatsappNumber", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Facebook", name: "facebook", widget: "string" }
+              - { label: "Адрес BG", name: "addressBg", widget: "string" }
+              - { label: "Адрес EN", name: "addressEn", widget: "string", required: false }
+          - { label: "Бележка към менюто BG", name: "menuNoteBg", widget: "text" }
+          - { label: "Бележка към менюто EN", name: "menuNoteEn", widget: "text", required: false }
+          - label: "Меню"
+            name: "menu"
+            widget: "list"
+            summary: "{{fields.categoryBg}}"
+            fields:
+              - { label: "Категория BG", name: "categoryBg", widget: "string" }
+              - { label: "Категория EN", name: "categoryEn", widget: "string", required: false }
+              - label: "Ястия"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nameBg}}"
+                fields:
+                  - { label: "Име BG", name: "nameBg", widget: "string" }
+                  - { label: "Име EN", name: "nameEn", widget: "string", required: false }
+                  - { label: "Описание BG", name: "descriptionBg", widget: "string", required: false }
+                  - { label: "Описание EN", name: "descriptionEn", widget: "string", required: false }
+          - label: "Галерия"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.altBg}}"
+            fields:
+              - { label: "Снимка", name: "image", widget: "image" }
+              - { label: "Alt текст BG", name: "altBg", widget: "string" }
+              - { label: "Alt текст EN", name: "altEn", widget: "string", required: false }

@@ -1,0 +1,1973 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Бистро Колибаре в село Граматиково - домашно приготвена храна, скара, свежи салати и кафе в сърцето на Странджа.">
+  <title>Бистро Колибаре село Граматиково | Домашна българска кухня</title>
+  <style>
+    :root {
+      --ink: #231916;
+      --muted: #66554c;
+      --paper: #fff8ee;
+      --cream: #f3e4cf;
+      --clay: #a94e2d;
+      --clay-dark: #74311f;
+      --green: #244c38;
+      --green-soft: #d9e4d4;
+      --tomato: #c7362c;
+      --line: rgba(35, 25, 22, 0.16);
+      --shadow: 0 22px 70px rgba(35, 25, 22, 0.18);
+      --radius: 8px;
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -60px;
+      z-index: 100;
+      padding: 10px 14px;
+      background: var(--paper);
+      border: 2px solid var(--green);
+      border-radius: var(--radius);
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      background: rgba(255, 248, 238, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(35, 25, 22, 0.1);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 44px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      color: var(--paper);
+      background: var(--green);
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--ink);
+      background: rgba(36, 76, 56, 0.09);
+      outline: none;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 238, 0.76);
+    }
+
+    .language-switch button {
+      min-width: 42px;
+      min-height: 36px;
+      border: 0;
+      border-radius: 6px;
+      color: var(--muted);
+      background: transparent;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .language-switch button.is-active {
+      color: #fff;
+      background: var(--green);
+    }
+
+    .language-switch button:focus-visible {
+      outline: 3px solid rgba(36, 76, 56, 0.28);
+      outline-offset: 2px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 88dvh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #fff;
+      background: #211410;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(20, 12, 10, 0.82) 0%, rgba(20, 12, 10, 0.58) 46%, rgba(20, 12, 10, 0.18) 100%),
+        linear-gradient(0deg, rgba(20, 12, 10, 0.82) 0%, rgba(20, 12, 10, 0.08) 48%, rgba(20, 12, 10, 0.35) 100%),
+        url("717632179_122100782475355405_7642465639843036071_n.jpg") center / cover;
+    }
+
+    .hero-inner {
+      position: relative;
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 136px 0 76px;
+    }
+
+    .eyebrow {
+      width: fit-content;
+      margin: 0 0 18px;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 999px;
+      background: rgba(255, 248, 238, 0.12);
+      color: #fff4de;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 790px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 8vw, 92px);
+      font-weight: 800;
+    }
+
+    .hero-copy {
+      max-width: 610px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.72);
+      outline-offset: 3px;
+    }
+
+    .button-primary {
+      color: #fff;
+      background: var(--tomato);
+      border-color: var(--tomato);
+    }
+
+    .button-secondary {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    .button-whatsapp {
+      color: #fff;
+      background: #1f7a4d;
+      border-color: #1f7a4d;
+    }
+
+    .hero-note {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 34px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+    }
+
+    .hero-note span {
+      padding: 7px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.16);
+    }
+
+    main {
+      overflow: clip;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      margin: 0 0 10px;
+      color: var(--clay-dark);
+      font-size: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 740px;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 5vw, 58px);
+    }
+
+    .section-lead {
+      max-width: 720px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .intro {
+      background: var(--paper);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .intro-media {
+      display: grid;
+      grid-template-columns: 0.76fr 1fr;
+      gap: 14px;
+      align-items: end;
+    }
+
+    .photo-tile {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--cream);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-tile.small {
+      aspect-ratio: 4 / 5;
+    }
+
+    .photo-tile.large {
+      aspect-ratio: 4 / 5.6;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      display: grid;
+      grid-template-columns: 12px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .feature-list li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-top: 9px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .menu-section {
+      background: #f7eddf;
+      border-block: 1px solid var(--line);
+    }
+
+    .menu-note {
+      max-width: 820px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .menu-board {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .menu-category {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 248, 0.82);
+      box-shadow: 0 14px 36px rgba(35, 25, 22, 0.08);
+    }
+
+    .menu-category header {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(36, 76, 56, 0.08);
+    }
+
+    .menu-category h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+    }
+
+    .menu-list {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .menu-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 14px 20px;
+      border-top: 1px solid rgba(35, 25, 22, 0.09);
+    }
+
+    .menu-row:first-child {
+      border-top: 0;
+    }
+
+    .menu-name {
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .menu-name strong {
+      line-height: 1.25;
+    }
+
+    .menu-name span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .menu-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .menu-tags span,
+    .menu-label {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 26px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(36, 76, 56, 0.1);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .menu-cta {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      margin-top: 26px;
+      padding: 22px;
+      border: 1px solid rgba(36, 76, 56, 0.18);
+      border-radius: var(--radius);
+      background: rgba(36, 76, 56, 0.08);
+    }
+
+    .menu-cta p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .menu-cta strong {
+      color: var(--ink);
+    }
+
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .dish-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 238, 0.7);
+      box-shadow: 0 14px 36px rgba(35, 25, 22, 0.08);
+    }
+
+    .dish-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .dish-body {
+      padding: 20px;
+    }
+
+    .dish-body h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+    }
+
+    .dish-body p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .catering-section {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .catering-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid rgba(36, 76, 56, 0.18);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(90deg, rgba(255, 248, 238, 0.96), rgba(255, 248, 238, 0.86)),
+        url("710827516_122100784731355405_4554133691777618941_n.jpg") center / cover;
+      box-shadow: 0 18px 52px rgba(35, 25, 22, 0.12);
+    }
+
+    .catering-band p {
+      max-width: 740px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .catering-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .catering-points span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(36, 76, 56, 0.1);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .atmosphere {
+      background: var(--green);
+      color: var(--paper);
+    }
+
+    .atmosphere .section-kicker,
+    .atmosphere .section-title,
+    .atmosphere .section-lead {
+      color: inherit;
+    }
+
+    .atmosphere .section-lead {
+      color: rgba(255, 248, 238, 0.78);
+    }
+
+    .atmosphere-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .wide-photo {
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    .wide-photo img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 248, 238, 0.2);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 238, 0.2);
+    }
+
+    .detail {
+      min-height: 132px;
+      padding: 20px;
+      background: rgba(255, 248, 238, 0.08);
+    }
+
+    .detail strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .detail span {
+      color: rgba(255, 248, 238, 0.78);
+    }
+
+    .gallery-section {
+      background: #fff8ee;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-auto-flow: dense;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--cream);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 34px rgba(35, 25, 22, 0.08);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      min-height: 210px;
+      object-fit: cover;
+      transition: transform 260ms ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.025);
+    }
+
+    .gallery-item.wide {
+      grid-column: span 2;
+    }
+
+    .gallery-item.tall {
+      grid-row: span 2;
+    }
+
+    .gallery-item.tall img {
+      min-height: 434px;
+    }
+
+    .nearby-section {
+      background: #eef4ea;
+      border-block: 1px solid rgba(36, 76, 56, 0.16);
+    }
+
+    .nearby-layout {
+      display: grid;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 42px;
+      align-items: start;
+      margin-top: 34px;
+    }
+
+    .nearby-panel {
+      position: sticky;
+      top: 96px;
+      padding: 24px;
+      border-radius: var(--radius);
+      background: var(--green);
+      color: var(--paper);
+      box-shadow: 0 18px 50px rgba(36, 76, 56, 0.18);
+    }
+
+    .nearby-panel h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+    }
+
+    .nearby-panel p {
+      margin: 14px 0 0;
+      color: rgba(255, 248, 238, 0.82);
+    }
+
+    .nearby-panel a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 18px;
+      color: #fff;
+      font-weight: 900;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .nearby-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .nearby-card {
+      min-height: 214px;
+      padding: 20px;
+      border: 1px solid rgba(36, 76, 56, 0.17);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 248, 0.78);
+      box-shadow: 0 12px 30px rgba(35, 25, 22, 0.06);
+    }
+
+    .nearby-card time,
+    .nearby-card .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      margin-bottom: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(36, 76, 56, 0.1);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .nearby-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+    }
+
+    .nearby-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .stay-section {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stay-card {
+      display: grid;
+      grid-template-columns: minmax(0, 0.98fr) minmax(280px, 0.72fr);
+      gap: 28px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid rgba(36, 76, 56, 0.18);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      box-shadow: 0 16px 50px rgba(35, 25, 22, 0.1);
+    }
+
+    .stay-card p {
+      max-width: 780px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .stay-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stay-facts span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(36, 76, 56, 0.1);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .stay-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .stay-actions .button {
+      min-width: 210px;
+    }
+
+    .stay-media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .stay-media figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+
+    .stay-media figure:first-child {
+      grid-column: span 2;
+    }
+
+    .stay-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 150px;
+      object-fit: cover;
+    }
+
+    .stay-media figure:first-child img {
+      aspect-ratio: 16 / 9;
+      min-height: 210px;
+    }
+
+    .contact {
+      background: var(--paper);
+    }
+
+    .contact-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      box-shadow: 0 16px 50px rgba(35, 25, 22, 0.08);
+    }
+
+    .contact-band p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .contact-band .button {
+      color: #fff;
+      background: var(--green);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .contact-item strong {
+      color: var(--ink);
+    }
+
+    .contact-item a {
+      color: var(--green);
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 220px;
+    }
+
+    .contact-actions .button {
+      width: 100%;
+    }
+
+    .contact-actions .button-light {
+      color: var(--green);
+      background: transparent;
+      border-color: rgba(36, 76, 56, 0.35);
+    }
+
+    .site-footer {
+      padding: 30px 0;
+      color: var(--muted);
+      background: #f0dfc9;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 14px;
+    }
+
+    .footer-inner a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    @media (max-width: 860px) {
+      .menu-toggle {
+        display: inline-grid;
+        place-items: center;
+        order: 3;
+      }
+
+      .language-switch {
+        order: 2;
+        margin-left: auto;
+      }
+
+      .nav-links {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 76px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        justify-content: center;
+      }
+
+      .hero {
+        min-height: 86dvh;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(0deg, rgba(20, 12, 10, 0.88) 0%, rgba(20, 12, 10, 0.28) 58%, rgba(20, 12, 10, 0.44) 100%),
+          url("717632179_122100782475355405_7642465639843036071_n.jpg") center / cover;
+      }
+
+      .intro-grid,
+      .atmosphere-grid,
+      .nearby-layout,
+      .catering-band,
+      .stay-card,
+      .contact-band {
+        grid-template-columns: 1fr;
+      }
+
+      .stay-actions {
+        min-width: 0;
+      }
+
+      .dish-grid,
+      .details,
+      .nearby-grid,
+      .menu-board,
+      .menu-cta,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nearby-panel {
+        position: static;
+      }
+
+      .gallery-item,
+      .gallery-item.wide,
+      .gallery-item.tall {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .gallery-item img,
+      .gallery-item.tall img {
+        min-height: 260px;
+      }
+
+      .contact-band {
+        padding: 24px;
+      }
+
+      .contact-actions {
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .nav {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .brand {
+        font-size: 15px;
+      }
+
+      .language-switch button {
+        min-width: 38px;
+      }
+
+      .hero-inner,
+      .container,
+      .footer-inner {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .hero-inner {
+        padding-bottom: 48px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .intro-media {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-tile.small,
+      .photo-tile.large {
+        aspect-ratio: 4 / 3;
+      }
+
+      .hero-actions,
+      .button {
+        width: 100%;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .stay-actions .button {
+        width: 100%;
+      }
+
+      .menu-row {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Към съдържанието</a>
+
+  <header class="site-header" aria-label="Основна навигация">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Бистро Колибаре начало">
+        <span class="brand-mark" aria-hidden="true">К</span>
+        <span>Бистро Колибаре</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Отвори меню" aria-controls="nav-links" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 7h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 17h16"></path>
+        </svg>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#kitchen">Кухня</a>
+        <a href="#menu">Меню</a>
+        <a href="#catering">Кетъринг</a>
+        <a href="#place">Място</a>
+        <a href="#gallery">Галерия</a>
+        <a href="#nearby">Наоколо</a>
+        <a href="#stay">Престой</a>
+        <a href="#contact">Контакт</a>
+      </div>
+      <div class="language-switch" aria-label="Избор на език">
+        <button type="button" class="is-active" data-lang="bg" aria-pressed="true">BG</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Бистро Колибаре">
+      <div class="hero-inner">
+        <p class="eyebrow">Село Граматиково • Странджа</p>
+        <h1>Бистро Колибаре</h1>
+        <p class="hero-copy">Домашно приготвена храна, скара, свежи салати и вкусно кафе в сърцето на Странджа. Семейно заведение с топъл прием.</p>
+        <div class="hero-actions">
+          <a class="button button-whatsapp" data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="button button-secondary" href="#menu">Вижте кухнята</a>
+        </div>
+        <div class="hero-note" aria-label="Акценти">
+          <span>Скара</span>
+          <span>Домашни гозби</span>
+          <span>Свежи салати</span>
+          <span>Кафе</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="kitchen">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-kicker">Кухня</p>
+          <h2 class="section-title">Храна, която се усеща близка още от първата хапка.</h2>
+          <p class="section-lead">Колибаре носи духа на семейното бистро в Граматиково: дървени маси, топли порции и спокойна странджанска атмосфера за хора, които искат да хапнат добре.</p>
+          <ul class="feature-list">
+            <li>Сочна скара и познати български вкусове.</li>
+            <li>Салати с домати, краставици, сирене и свежи подправки.</li>
+            <li>Топли ястия, кафе и домашен подход към всяка маса.</li>
+          </ul>
+        </div>
+        <div class="intro-media" aria-label="Снимки от кухнята">
+          <figure class="photo-tile small">
+            <img src="718389817_2779885189052511_2275176136829269040_n.jpg" alt="Свежа салата с домати, краставици и сирене" loading="lazy">
+          </figure>
+          <figure class="photo-tile large">
+            <img src="718013911_3952504965054800_1558288429939273830_n.jpg" alt="Порция скара върху бяла чиния" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <p class="section-kicker">Меню</p>
+        <h2 class="section-title">Домашни ястия, салати, скара и аламинути.</h2>
+        <p class="section-lead">Менюто е представено като кулинарна карта без цени, защото предложенията и стойностите могат да се променят според сезона, наличностите и дневната кухня.</p>
+        <p class="menu-note" data-cms="menuNote">За актуални цени, дневни предложения или храна за група пишете в WhatsApp или попитайте на място.</p>
+
+        <div class="menu-board" aria-label="Меню на Бистро Колибаре" data-cms="menuBoard">
+          <article class="menu-category">
+            <header>
+              <h3>Супи</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Шкембе чорба</strong><span>Класика за любителите на топла супа.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Пилешка супа</strong><span>Домашна, лека и подходяща за обяд.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Таратор</strong><span>Свеж избор за топлите дни.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Салати и разядки</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Шопска салата</strong><span>Домати, краставици, сирене и свежа подправка.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Зелева салата</strong><span>Лека гарнитура към скара и основни ястия.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Бобена салата</strong><span>Познат български вкус за начало или мезе.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Сурова туршия</strong><span>Свежо, хрупкаво и подходящо за споделяне.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Печени чушки с чесън</strong><span>Ароматни печени чушки с домашен характер.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Разядка Тиро</strong><span>Разядка със сирене.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Разядка бяла тарама</strong><span>С препечена филийка.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Студени мезета</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Луканка</strong><span>Класическо мезе за масата.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Сирене</strong><span>Подходящо към салати, разядки и напитки.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Кашкавал</strong><span>За мезе или добавка към компанията.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Аламинути</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Пържени картофи</strong><span>Класическа гарнитура или бързо мезе.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Пържени картофи със сирене</strong><span>Любим избор към скара.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Картофени кюфтенца</strong><span>С чеснов сос.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Картофи по селски</strong><span>Хрупкави и подходящи за споделяне.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Панирани топени сиренца</strong><span>Със сладко от боровинки.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Пилешки хапки</strong><span>С чеснов сос.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Хрупкави крилца</strong><span>За компания и студена напитка.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Уши в масло и чесън</strong><span>Топло мезе с характерен вкус.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Телешко шкембе в тиганче</strong><span>С масло и кашкавал.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Свински дробчета в тиганче</strong><span>Топъл избор за любителите на мезета.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Скара</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Кюфте / кебапче</strong><span>Най-познатият вкус от скарата.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Пилешка пържола</strong><span>Лека и сочна порция на скара.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Свинска пържола</strong><span>Класическо месно предложение.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Суров суджук на скара</strong><span>Ароматен избор за ценители.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Телешка плескавица</strong><span>С бекон и кашкавал.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Гарнитури, хляб и десерти</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Комбинирана гарнитура</strong><span>Боб, зеле и лютеница.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Домати и краставици</strong><span>Свежа добавка към основно ястие.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Филийка хляб</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Пърленка</strong><span>С чесън и шарена сол.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Домашна бисквитена торта</strong><span>Сладък финал към обяда.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Баклава</strong><span>Класически десерт.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Сандвичи</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Странджанка</strong><span>Бърз и засищащ избор.</span></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Сандвич със сланина</strong><span>За любителите на по-силен вкус.</span></span></li>
+            </ul>
+          </article>
+
+          <article class="menu-category">
+            <header>
+              <h3>Аперитиви и напитки</h3>
+            </header>
+            <ul class="menu-list">
+              <li class="menu-row"><span class="menu-name"><strong>Ракия</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Водка</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Мастика Пещера</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Мента Пещера</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Уиски Johnnie Walker</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Уиски Red Label</strong></span></li>
+              <li class="menu-row"><span class="menu-name"><strong>Наливна бира</strong><span>0.500 л и 0.330 л.</span></span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="menu-cta">
+          <p><strong>Търсите конкретно ястие или меню за група?</strong><br>Пишете ни в WhatsApp и ще ви кажем какво има днес.</p>
+          <a class="button button-whatsapp" data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">Попитайте за днешното меню</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catering-section" id="catering">
+      <div class="container">
+        <div class="catering-band">
+          <div>
+            <p class="section-kicker">Кетъринг</p>
+            <h2 class="section-title">Домашна храна за гости извън бистрото.</h2>
+            <p>Бистро Колибаре приготвя храна и за къща за гости, като менюто може да се уточни предварително според броя хора, повода и предпочитанията на компанията.</p>
+            <div class="catering-points" aria-label="Кетъринг услуги">
+              <span>По предварителна заявка</span>
+              <span>Меню по желание</span>
+              <span>За групи и семейства</span>
+              <span>Закуска, обяд или вечеря</span>
+            </div>
+          </div>
+          <a class="button button-whatsapp" data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">Попитайте в WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="atmosphere" id="place">
+      <div class="container atmosphere-grid">
+        <div>
+          <p class="section-kicker">Атмосфера</p>
+          <h2 class="section-title">Място за непринудено сядане и добра храна.</h2>
+          <p class="section-lead">Интериорът е семпъл и познат: дърво, каре, светлина през прозорците и маси, които канят към спокоен разговор.</p>
+
+          <div class="details">
+            <div class="detail">
+              <strong>За кафе</strong>
+              <span>Спокойно начало на деня в сърцето на Странджа.</span>
+            </div>
+            <div class="detail">
+              <strong>За тържества</strong>
+              <span>Рождени дни, семейни поводи и фирмени събирания.</span>
+            </div>
+            <div class="detail">
+              <strong>За престой</strong>
+              <span>Към бистрото е обявен и апартамент под наем.</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="wide-photo">
+          <img src="710827516_122100784731355405_4554133691777618941_n.jpg" alt="Подредена дълга маса за семейно тържество в Бистро Колибаре" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <p class="section-kicker">Галерия</p>
+        <h2 class="section-title">Вижте атмосферата в Бистро Колибаре.</h2>
+
+        <div class="gallery-grid" aria-label="Снимки от Бистро Колибаре" data-cms="bistroGallery">
+          <figure class="gallery-item wide">
+            <img src="718754953_122100784575355405_9158575733724901696_n.jpg" alt="Фасада на Бистро Колибаре с външни маси и чадъри" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="710799439_122100784677355405_435484373201384865_n.jpg" alt="Покрита веранда с дървени маси пред бистрото" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="717811809_122100784641355405_487573052095131480_n.jpg" alt="Маси на верандата с гледка към улицата" loading="lazy">
+          </figure>
+          <figure class="gallery-item wide">
+            <img src="718118258_122100784491355405_3533497227148573105_n.jpg" alt="Интериор на Бистро Колибаре с маси и бар" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="710827516_122100784731355405_4554133691777618941_n.jpg" alt="Дълга маса, подготвена за гости и тържество" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="719222340_2218100672378057_7977238443996969050_n.jpg" alt="Топла домашна гозба в глинен съд" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="719029978_122100784839355405_2459956735258601257_n.jpg" alt="Скара с пържени картофи и млечен сос" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="718389817_2779885189052511_2275176136829269040_n.jpg" alt="Свежа салата с домати, краставици и сирене" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="nearby-section" id="nearby">
+      <div class="container">
+        <p class="section-kicker">Наоколо</p>
+        <h2 class="section-title">Какво да видите преди или след хапване в Колибаре.</h2>
+        <p class="section-lead">Граматиково е удобно място за кратка закуска преди разходка или обяд след маршрут в Странджа. Селото е на високо било над долината на Велека, с гледки към Резовското било и турска Странджа.</p>
+
+        <div class="nearby-layout">
+          <aside class="nearby-panel">
+            <h3>Идея за деня</h3>
+            <p>Започнете с кафе и закуска в бистрото, минете през центъра и Горската сбирка, после изберете кратка разходка към параклис или по-дълъг маршрут към Качул и Велека. За финал се върнете за топла храна или скара.</p>
+            <a href="https://www.strandja.bg/bg/info/62-selo-gramaticovo" target="_blank" rel="noopener">Източник: Природен парк Странджа</a>
+          </aside>
+
+          <div class="nearby-grid">
+            <article class="nearby-card">
+              <span class="tag">Бърза разходка</span>
+              <h3>Панорами над Велека</h3>
+              <p>От района на Граматиково се откриват гледки към долината на река Велека, Резовското било и южната част на Странджа. Подходящо е за кратка спирка след кафе.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">В центъра</span>
+              <h3>Горската сбирка</h3>
+              <p>Представителна експозиция за биологичното разнообразие на Странджа и историята на горското дело в района. Добър избор за гости с деца или при по-кратко време.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">Култура</span>
+              <h3>Църква “Св. 40 Мъченици”</h3>
+              <p>Храм с история от края на XVIII век и паметник на културата. Подходяща спирка за хора, които искат да усетят старото Граматиково.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">Около селото</span>
+              <h3>Параклисите на Граматиково</h3>
+              <p>Сред почитаните места са “Св. Илия” на около 2 км южно от селото, “Св. Богородица” в м. Качул и “Св. Св. Константин и Елена” в м. Язмицата.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">По-дълга разходка</span>
+              <h3>Параклис “Св. Троица”</h3>
+              <p>Едно от най-интересните места в Странджа: параклис върху входа на естествена пещера, каменни стъпала, аязмо и кът за отдих. Наблизо расте стар дъб лъжник.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">Традиции</span>
+              <h3>Голямата аязма</h3>
+              <p>Свято място във Влахов дол, свързано с нестинарските села Българи, Кости, Граматиково, Кондолово и Сливарово. Достъпът е по маркирани маршрути.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">Природа</span>
+              <h3>Дендрариум в м. Качул</h3>
+              <p>Колекция от дървета и храсти край река Велека, включително чуждоземни видове и местна странджанска дендрофлора. Подходящо за спокойна природна разходка.</p>
+            </article>
+
+            <article class="nearby-card">
+              <span class="tag">История</span>
+              <h3>Тракийски следи и стар римски път</h3>
+              <p>Околностите на Граматиково са познати с тракийски некрополи и могили, рудни находища, следи от антични селища и стар римски път.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stay-section" id="stay">
+      <div class="container">
+        <div class="stay-card">
+          <div>
+            <p class="section-kicker">Престой в Граматиково</p>
+            <h2 class="section-title">Хапнете в Колибаре и останете в центъра на селото.</h2>
+            <p>За гости, които искат повече от кратък обяд, има отделен апартамент за нощувки в центъра на Граматиково. Подходящ е за до 4 гости и комбинира удобството на самостоятелен престой с домашна храна наблизо.</p>
+            <div class="stay-facts" aria-label="Акценти за апартамента">
+              <span>До 4 гости</span>
+              <span>60 кв.м.</span>
+              <span>Тераса</span>
+              <span>Wi-Fi</span>
+              <span>Оборудвана кухня</span>
+              <span>Гледка към площада</span>
+            </div>
+            <div class="stay-actions">
+              <a class="button button-whatsapp" href="https://apartment-gramatikovo.netlify.app/" target="_blank" rel="noopener">Вижте апартамента</a>
+              <a class="button button-light" data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">Попитайте за престой</a>
+            </div>
+          </div>
+          <div class="stay-media" aria-label="Снимки от апартамента">
+            <figure>
+              <img src="apartment-living.jpg" alt="Дневна в апартамента в центъра на Граматиково" loading="lazy">
+            </figure>
+            <figure>
+              <img src="apartment-kitchen.jpg" alt="Оборудвана кухня в апартамента" loading="lazy">
+            </figure>
+            <figure>
+              <img src="apartment-sunset.jpg" alt="Залез и гледка от района на апартамента" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-band">
+          <div>
+            <p class="section-kicker">Контакт</p>
+            <h2 class="section-title">Запазете маса или вижте актуалните предложения.</h2>
+            <p>Бистро "Колибаре" село Граматиково е ресторант на ул. Петрова Нива 29, Gramatikovo, Bulgaria, 8166.</p>
+            <div class="contact-list" aria-label="Контакти">
+              <div class="contact-item">
+                <strong>Адрес</strong>
+                <a href="https://www.google.com/maps/search/?api=1&query=%D0%A3%D0%BB%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B0%20%D0%9D%D0%B8%D0%B2%D0%B0%2029%2C%20Gramatikovo%2C%20Bulgaria%2C%208166" target="_blank" rel="noopener">ул. Петрова Нива 29, Граматиково</a>
+              </div>
+              <div class="contact-item">
+                <strong>Телефон</strong>
+                <a data-cms="phoneLink" href="tel:+359888029267">+359 88 802 9267</a>
+              </div>
+              <div class="contact-item">
+                <strong>WhatsApp</strong>
+                <a data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">Пишете в WhatsApp</a>
+              </div>
+              <div class="contact-item">
+                <strong>Имейл</strong>
+                <a data-cms="emailLink" href="mailto:lussikalin177@gmail.com">lussikalin177@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <strong>Работно време</strong>
+                <span>Понеделник - събота: 7:00 - 15:00 и 17:30 - 22:30<br>Неделя: 7:00 - 13:30</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-whatsapp" data-cms-whatsapp href="https://wa.me/359888029267" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="button button-light" data-cms="facebookLink" href="https://www.facebook.com/BistroKolibare" target="_blank" rel="noopener">Отворете Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 Бистро Колибаре. Всички права запазени.</span>
+      <a data-cms="facebookLink" href="https://www.facebook.com/BistroKolibare" target="_blank" rel="noopener">facebook.com/BistroKolibare</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("#nav-links");
+    const languageButtons = document.querySelectorAll("[data-lang]");
+
+    const translations = {
+      "Към съдържанието": "Skip to content",
+      "Бистро Колибаре": "Bistro Kolibare",
+      "Кухня": "Kitchen",
+      "Меню": "Menu",
+      "Кетъринг": "Catering",
+      "Място": "Place",
+      "Галерия": "Gallery",
+      "Наоколо": "Nearby",
+      "Престой": "Stay",
+      "Контакт": "Contact",
+      "Село Граматиково • Странджа": "Gramatikovo Village • Strandzha",
+      "Домашно приготвена храна, скара, свежи салати и вкусно кафе в сърцето на Странджа. Семейно заведение с топъл прием.": "Homemade food, grilled dishes, fresh salads and good coffee in the heart of Strandzha. A family-run place with a warm welcome.",
+      "Вижте кухнята": "See the food",
+      "Скара": "Grill",
+      "Домашни гозби": "Homemade dishes",
+      "Свежи салати": "Fresh salads",
+      "Кафе": "Coffee",
+      "Храна, която се усеща близка още от първата хапка.": "Food that feels familiar from the first bite.",
+      "Колибаре носи духа на семейното бистро в Граматиково: дървени маси, топли порции и спокойна странджанска атмосфера за хора, които искат да хапнат добре.": "Kolibare carries the spirit of a family bistro in Gramatikovo: wooden tables, warm portions and a calm Strandzha atmosphere for people who want to eat well.",
+      "Сочна скара и познати български вкусове.": "Juicy grilled food and familiar Bulgarian flavours.",
+      "Салати с домати, краставици, сирене и свежи подправки.": "Salads with tomatoes, cucumbers, white cheese and fresh herbs.",
+      "Топли ястия, кафе и домашен подход към всяка маса.": "Warm dishes, coffee and a homemade touch at every table.",
+      "Домашни ястия, салати, скара и аламинути.": "Homemade dishes, salads, grill and quick bites.",
+      "Менюто е представено като кулинарна карта без цени, защото предложенията и стойностите могат да се променят според сезона, наличностите и дневната кухня.": "The menu is shown as a food guide without prices, because dishes and prices may change according to the season, availability and daily cooking.",
+      "За актуални цени, дневни предложения или храна за група пишете в WhatsApp или попитайте на място.": "For current prices, daily specials or group meals, message us on WhatsApp or ask on site.",
+      "Супи": "Soups",
+      "Шкембе чорба": "Tripe soup",
+      "Класика за любителите на топла супа.": "A classic for lovers of warm soup.",
+      "Пилешка супа": "Chicken soup",
+      "Домашна, лека и подходяща за обяд.": "Homemade, light and good for lunch.",
+      "Таратор": "Tarator",
+      "Свеж избор за топлите дни.": "A fresh choice for warm days.",
+      "Салати и разядки": "Salads and spreads",
+      "Шопска салата": "Shopska salad",
+      "Домати, краставици, сирене и свежа подправка.": "Tomatoes, cucumbers, Bulgarian white cheese and fresh herbs.",
+      "Зелева салата": "Cabbage salad",
+      "Лека гарнитура към скара и основни ястия.": "A light side for grilled and main dishes.",
+      "Бобена салата": "Bean salad",
+      "Познат български вкус за начало или мезе.": "A familiar Bulgarian flavour as a starter or meze.",
+      "Сурова туршия": "Fresh pickled vegetables",
+      "Свежо, хрупкаво и подходящо за споделяне.": "Fresh, crunchy and easy to share.",
+      "Печени чушки с чесън": "Roasted peppers with garlic",
+      "Ароматни печени чушки с домашен характер.": "Aromatic roasted peppers with a homemade character.",
+      "Разядка Тиро": "Tiro cheese spread",
+      "Разядка със сирене.": "A cheese-based spread.",
+      "Разядка бяла тарама": "White tarama spread",
+      "С препечена филийка.": "Served with toasted bread.",
+      "Студени мезета": "Cold meze",
+      "Луканка": "Lukanka",
+      "Класическо мезе за масата.": "A classic Bulgarian meze for the table.",
+      "Сирене": "Bulgarian white cheese",
+      "Подходящо към салати, разядки и напитки.": "Good with salads, spreads and drinks.",
+      "Кашкавал": "Kashkaval cheese",
+      "За мезе или добавка към компанията.": "For meze or sharing with the group.",
+      "Аламинути": "Quick bites",
+      "Пържени картофи": "French fries",
+      "Класическа гарнитура или бързо мезе.": "A classic side or quick meze.",
+      "Пържени картофи със сирене": "French fries with cheese",
+      "Любим избор към скара.": "A favourite side for grilled food.",
+      "Картофени кюфтенца": "Potato patties",
+      "С чеснов сос.": "With garlic sauce.",
+      "Картофи по селски": "Country-style potatoes",
+      "Хрупкави и подходящи за споделяне.": "Crispy and good for sharing.",
+      "Панирани топени сиренца": "Breaded melted cheese bites",
+      "Със сладко от боровинки.": "With blueberry jam.",
+      "Пилешки хапки": "Chicken bites",
+      "Хрупкави крилца": "Crispy wings",
+      "За компания и студена напитка.": "Good for sharing with a cold drink.",
+      "Уши в масло и чесън": "Pork ears with butter and garlic",
+      "Топло мезе с характерен вкус.": "A warm meze with a distinctive flavour.",
+      "Телешко шкембе в тиганче": "Beef tripe in a pan",
+      "С масло и кашкавал.": "With butter and kashkaval cheese.",
+      "Свински дробчета в тиганче": "Pork liver in a pan",
+      "Топъл избор за любителите на мезета.": "A warm choice for meze lovers.",
+      "Кюфте / кебапче": "Meatball / kebapche",
+      "Най-познатият вкус от скарата.": "The most familiar taste from the grill.",
+      "Пилешка пържола": "Chicken steak",
+      "Лека и сочна порция на скара.": "A light and juicy grilled portion.",
+      "Свинска пържола": "Pork steak",
+      "Класическо месно предложение.": "A classic meat dish.",
+      "Суров суджук на скара": "Grilled raw sudzhuk",
+      "Ароматен избор за ценители.": "An aromatic choice for connoisseurs.",
+      "Телешка плескавица": "Beef pleskavitsa",
+      "С бекон и кашкавал.": "With bacon and kashkaval cheese.",
+      "Гарнитури, хляб и десерти": "Sides, bread and desserts",
+      "Комбинирана гарнитура": "Mixed side dish",
+      "Боб, зеле и лютеница.": "Beans, cabbage and lyutenitsa.",
+      "Домати и краставици": "Tomatoes and cucumbers",
+      "Свежа добавка към основно ястие.": "A fresh side for a main dish.",
+      "Филийка хляб": "Slice of bread",
+      "Пърленка": "Flatbread",
+      "С чесън и шарена сол.": "With garlic and Bulgarian mixed salt.",
+      "Домашна бисквитена торта": "Homemade biscuit cake",
+      "Сладък финал към обяда.": "A sweet finish to lunch.",
+      "Баклава": "Baklava",
+      "Класически десерт.": "A classic dessert.",
+      "Сандвичи": "Sandwiches",
+      "Странджанка": "Strandzhanka",
+      "Бърз и засищащ избор.": "A quick and filling choice.",
+      "Сандвич със сланина": "Sandwich with slanina",
+      "За любителите на по-силен вкус.": "For those who like a stronger taste.",
+      "Аперитиви и напитки": "Aperitifs and drinks",
+      "Ракия": "Rakia",
+      "Водка": "Vodka",
+      "Мастика Пещера": "Mastika Peshtera",
+      "Мента Пещера": "Menta Peshtera",
+      "Уиски Johnnie Walker": "Johnnie Walker whisky",
+      "Уиски Red Label": "Red Label whisky",
+      "Наливна бира": "Draft beer",
+      "0.500 л и 0.330 л.": "0.500 l and 0.330 l.",
+      "Търсите конкретно ястие или меню за група?": "Looking for a specific dish or group menu?",
+      "Пишете ни в WhatsApp и ще ви кажем какво има днес.": "Message us on WhatsApp and we will tell you what is available today.",
+      "Попитайте за днешното меню": "Ask for today's menu",
+      "Домашна храна за гости извън бистрото.": "Homemade food for guests outside the bistro.",
+      "Бистро Колибаре приготвя храна и за къща за гости, като менюто може да се уточни предварително според броя хора, повода и предпочитанията на компанията.": "Bistro Kolibare also prepares food for a guest house, with the menu agreed in advance according to the number of people, the occasion and the group's preferences.",
+      "По предварителна заявка": "By advance request",
+      "Меню по желание": "Custom menu",
+      "За групи и семейства": "For groups and families",
+      "Закуска, обяд или вечеря": "Breakfast, lunch or dinner",
+      "Попитайте в WhatsApp": "Ask on WhatsApp",
+      "Атмосфера": "Atmosphere",
+      "Място за непринудено сядане и добра храна.": "A relaxed place to sit down and eat well.",
+      "Интериорът е семпъл и познат: дърво, каре, светлина през прозорците и маси, които канят към спокоен разговор.": "The interior is simple and familiar: wood, checked textiles, light through the windows and tables that invite easy conversation.",
+      "За кафе": "For coffee",
+      "Спокойно начало на деня в сърцето на Странджа.": "A calm start to the day in the heart of Strandzha.",
+      "За тържества": "For celebrations",
+      "Рождени дни, семейни поводи и фирмени събирания.": "Birthdays, family occasions and company gatherings.",
+      "За престой": "For a stay",
+      "Към бистрото е обявен и апартамент под наем.": "There is also an apartment for rent connected with the bistro.",
+      "Вижте атмосферата в Бистро Колибаре.": "See the atmosphere at Bistro Kolibare.",
+      "Какво да видите преди или след хапване в Колибаре.": "What to see before or after eating at Kolibare.",
+      "Граматиково е удобно място за кратка закуска преди разходка или обяд след маршрут в Странджа. Селото е на високо било над долината на Велека, с гледки към Резовското било и турска Странджа.": "Gramatikovo is a convenient place for a quick breakfast before a walk or lunch after a route in Strandzha. The village sits on a high ridge above the Veleka valley, with views towards the Rezovo ridge and Turkish Strandzha.",
+      "Идея за деня": "Day trip idea",
+      "Започнете с кафе и закуска в бистрото, минете през центъра и Горската сбирка, после изберете кратка разходка към параклис или по-дълъг маршрут към Качул и Велека. За финал се върнете за топла храна или скара.": "Start with coffee and breakfast at the bistro, pass through the centre and the Forest Collection, then choose a short walk to a chapel or a longer route towards Kachul and Veleka. Finish by coming back for warm food or grill.",
+      "Източник: Природен парк Странджа": "Source: Strandzha Nature Park",
+      "Бърза разходка": "Short walk",
+      "Панорами над Велека": "Views above Veleka",
+      "От района на Граматиково се откриват гледки към долината на река Велека, Резовското било и южната част на Странджа. Подходящо е за кратка спирка след кафе.": "The area around Gramatikovo opens views towards the Veleka River valley, the Rezovo ridge and southern Strandzha. Good for a short stop after coffee.",
+      "В центъра": "In the centre",
+      "Горската сбирка": "The Forest Collection",
+      "Представителна експозиция за биологичното разнообразие на Странджа и историята на горското дело в района. Добър избор за гости с деца или при по-кратко време.": "An exhibition about Strandzha's biodiversity and the history of forestry in the area. A good choice for guests with children or limited time.",
+      "Култура": "Culture",
+      "Църква “Св. 40 Мъченици”": "Church of the Holy Forty Martyrs",
+      "Храм с история от края на XVIII век и паметник на културата. Подходяща спирка за хора, които искат да усетят старото Граматиково.": "A church with history from the late 18th century and a cultural monument. A good stop for visitors who want to feel old Gramatikovo.",
+      "Около селото": "Around the village",
+      "Параклисите на Граматиково": "The chapels of Gramatikovo",
+      "Сред почитаните места са “Св. Илия” на около 2 км южно от селото, “Св. Богородица” в м. Качул и “Св. Св. Константин и Елена” в м. Язмицата.": "Notable places include St. Elijah about 2 km south of the village, Holy Mother of God in the Kachul area and Sts. Constantine and Helena in Yazmitsata.",
+      "По-дълга разходка": "Longer walk",
+      "Параклис “Св. Троица”": "Holy Trinity Chapel",
+      "Едно от най-интересните места в Странджа: параклис върху входа на естествена пещера, каменни стъпала, аязмо и кът за отдих. Наблизо расте стар дъб лъжник.": "One of the most interesting places in Strandzha: a chapel over the entrance to a natural cave, stone steps, a holy spring and a rest area. An old oak tree grows nearby.",
+      "Традиции": "Traditions",
+      "Голямата аязма": "The Big Holy Spring",
+      "Свято място във Влахов дол, свързано с нестинарските села Българи, Кости, Граматиково, Кондолово и Сливарово. Достъпът е по маркирани маршрути.": "A sacred place in Vlahov Dol, connected with the fire-dancing villages Balgari, Kosti, Gramatikovo, Kondolovo and Slivarovo. Access is via marked routes.",
+      "Природа": "Nature",
+      "Дендрариум в м. Качул": "Dendrarium in Kachul",
+      "Колекция от дървета и храсти край река Велека, включително чуждоземни видове и местна странджанска дендрофлора. Подходящо за спокойна природна разходка.": "A collection of trees and shrubs near the Veleka River, including foreign species and local Strandzha dendroflora. Good for a calm nature walk.",
+      "История": "History",
+      "Тракийски следи и стар римски път": "Thracian traces and an old Roman road",
+      "Околностите на Граматиково са познати с тракийски некрополи и могили, рудни находища, следи от антични селища и стар римски път.": "The surroundings of Gramatikovo are known for Thracian necropolises and mounds, ore deposits, traces of ancient settlements and an old Roman road.",
+      "Престой в Граматиково": "Stay in Gramatikovo",
+      "Хапнете в Колибаре и останете в центъра на селото.": "Eat at Kolibare and stay in the village centre.",
+      "За гости, които искат повече от кратък обяд, има отделен апартамент за нощувки в центъра на Граматиково. Подходящ е за до 4 гости и комбинира удобството на самостоятелен престой с домашна храна наблизо.": "For guests who want more than a short lunch, there is a separate apartment for overnight stays in the centre of Gramatikovo. It is suitable for up to 4 guests and combines independent accommodation with homemade food nearby.",
+      "До 4 гости": "Up to 4 guests",
+      "60 кв.м.": "60 sq.m.",
+      "Тераса": "Terrace",
+      "Оборудвана кухня": "Equipped kitchen",
+      "Гледка към площада": "View of the square",
+      "Вижте апартамента": "See the apartment",
+      "Попитайте за престой": "Ask about a stay",
+      "Запазете маса или вижте актуалните предложения.": "Reserve a table or ask about today's specials.",
+      "Бистро \"Колибаре\" село Граматиково е ресторант на ул. Петрова Нива 29, Gramatikovo, Bulgaria, 8166.": "Bistro Kolibare in Gramatikovo is a restaurant at 29 Petrova Niva St., Gramatikovo, Bulgaria, 8166.",
+      "Адрес": "Address",
+      "ул. Петрова Нива 29, Граматиково": "29 Petrova Niva St., Gramatikovo",
+      "Телефон": "Phone",
+      "Пишете в WhatsApp": "Message on WhatsApp",
+      "Имейл": "Email",
+      "Работно време": "Opening hours",
+      "Понеделник - събота: 7:00 - 15:00 и 17:30 - 22:30": "Monday - Saturday: 7:00 - 15:00 and 17:30 - 22:30",
+      "Неделя: 7:00 - 13:30": "Sunday: 7:00 - 13:30",
+      "Отворете Facebook": "Open Facebook",
+      "© 2026 Бистро Колибаре. Всички права запазени.": "© 2026 Bistro Kolibare. All rights reserved."
+    };
+
+    const attrTranslations = {
+      "Основна навигация": "Main navigation",
+      "Избор на език": "Language selection",
+      "Бистро Колибаре начало": "Bistro Kolibare home",
+      "Отвори меню": "Open menu",
+      "Затвори меню": "Close menu",
+      "Акценти": "Highlights",
+      "Снимки от кухнята": "Kitchen photos",
+      "Меню на Бистро Колибаре": "Bistro Kolibare menu",
+      "Кетъринг услуги": "Catering services",
+      "Снимки от Бистро Колибаре": "Photos from Bistro Kolibare",
+      "Акценти за апартамента": "Apartment highlights",
+      "Снимки от апартамента": "Apartment photos",
+      "Контакти": "Contacts",
+      "Свежа салата с домати, краставици и сирене": "Fresh salad with tomatoes, cucumbers and white cheese",
+      "Порция скара върху бяла чиния": "A grilled portion on a white plate",
+      "Подредена дълга маса за семейно тържество в Бистро Колибаре": "Long table set for a family celebration at Bistro Kolibare",
+      "Фасада на Бистро Колибаре с външни маси и чадъри": "Bistro Kolibare facade with outdoor tables and umbrellas",
+      "Покрита веранда с дървени маси пред бистрото": "Covered veranda with wooden tables in front of the bistro",
+      "Маси на верандата с гледка към улицата": "Veranda tables with a street view",
+      "Интериор на Бистро Колибаре с маси и бар": "Bistro Kolibare interior with tables and bar",
+      "Дълга маса, подготвена за гости и тържество": "Long table prepared for guests and a celebration",
+      "Топла домашна гозба в глинен съд": "Warm homemade dish in a clay pot",
+      "Скара с пържени картофи и млечен сос": "Grilled food with fried potatoes and yoghurt sauce",
+      "Дневна в апартамента в центъра на Граматиково": "Living room in the apartment in central Gramatikovo",
+      "Оборудвана кухня в апартамента": "Equipped kitchen in the apartment",
+      "Залез и гледка от района на апартамента": "Sunset and view from the apartment area"
+    };
+
+    let currentLanguage = localStorage.getItem("kolibare-language") || "bg";
+
+    function translateValue(value, lang) {
+      if (lang === "bg") return value;
+      return translations[value] || attrTranslations[value] || value;
+    }
+
+    function imagePath(src) {
+      if (!src) return "";
+      if (/^(https?:)?\/\//.test(src) || src.startsWith("/")) return src;
+      return src;
+    }
+
+    function cmsText(valueBg, valueEn) {
+      return currentLanguage === "en" ? valueEn || valueBg || "" : valueBg || valueEn || "";
+    }
+
+    function renderBistroMenu(menu = []) {
+      const board = document.querySelector('[data-cms="menuBoard"]');
+      if (!board || !menu.length) return;
+      board.innerHTML = menu
+        .map((category) => {
+          const items = (category.items || [])
+            .map((item) => {
+              const description = cmsText(item.descriptionBg, item.descriptionEn);
+              return `
+                <li class="menu-row">
+                  <span class="menu-name">
+                    <strong>${cmsText(item.nameBg, item.nameEn)}</strong>
+                    ${description ? `<span>${description}</span>` : ""}
+                  </span>
+                </li>
+              `;
+            })
+            .join("");
+
+          return `
+            <article class="menu-category">
+              <header>
+                <h3>${cmsText(category.categoryBg, category.categoryEn)}</h3>
+              </header>
+              <ul class="menu-list">${items}</ul>
+            </article>
+          `;
+        })
+        .join("");
+    }
+
+    function renderBistroGallery(gallery = []) {
+      const grid = document.querySelector('[data-cms="bistroGallery"]');
+      if (!grid || !gallery.length) return;
+      grid.innerHTML = gallery
+        .map((item, index) => {
+          const classes = ["gallery-item"];
+          if (index === 0 || index === 3) classes.push("wide");
+          if (index === 5) classes.push("tall");
+          return `
+            <figure class="${classes.join(" ")}">
+              <img src="${imagePath(item.image)}" alt="${cmsText(item.altBg, item.altEn)}" loading="lazy">
+            </figure>
+          `;
+        })
+        .join("");
+    }
+
+    function renderBistroContent(content) {
+      if (!content) return;
+      const contact = content.contact || {};
+      const menuNote = document.querySelector('[data-cms="menuNote"]');
+      if (menuNote) menuNote.textContent = cmsText(content.menuNoteBg, content.menuNoteEn);
+
+      renderBistroMenu(content.menu);
+      renderBistroGallery(content.gallery);
+
+      const phoneLink = document.querySelector('[data-cms="phoneLink"]');
+      if (phoneLink && contact.phone) {
+        phoneLink.href = `tel:${contact.phone}`;
+        phoneLink.textContent = contact.phoneDisplay || contact.phone;
+      }
+
+      const emailLink = document.querySelector('[data-cms="emailLink"]');
+      if (emailLink && contact.email) {
+        emailLink.href = `mailto:${contact.email}`;
+        emailLink.textContent = contact.email;
+      }
+
+      document.querySelectorAll('[data-cms="facebookLink"]').forEach((link) => {
+        if (contact.facebook) link.href = contact.facebook;
+      });
+
+      document.querySelectorAll("[data-cms-whatsapp]").forEach((link) => {
+        if (contact.whatsappNumber) {
+          const message =
+            currentLanguage === "en"
+              ? "Hello, I am interested in Bistro Kolibare in Gramatikovo."
+              : "Здравейте, интересувам се от Бистро Колибаре в Граматиково.";
+          link.href = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
+        }
+      });
+    }
+
+    async function fetchJsonFrom(paths) {
+      for (const path of paths) {
+        try {
+          const response = await fetch(path, { cache: "no-store" });
+          if (response.ok) return await response.json();
+        } catch (error) {
+          // The static fallback stays visible when local serving cannot fetch JSON.
+        }
+      }
+      return null;
+    }
+
+    async function loadBistroContent() {
+      const content = await fetchJsonFrom([
+        "../content/bistro.json",
+        "/content/bistro.json",
+        "content/bistro.json"
+      ]);
+      window.bistroContent = content;
+      renderBistroContent(content);
+    }
+
+    function applyLanguage(lang) {
+      currentLanguage = lang;
+      document.documentElement.lang = lang;
+      document.title = lang === "en"
+        ? "Bistro Kolibare Gramatikovo | Homemade Bulgarian Food"
+        : "Бистро Колибаре село Граматиково | Домашна българска кухня";
+
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          const parent = node.parentElement;
+          if (!parent || ["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+      });
+
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+
+      nodes.forEach((node) => {
+        if (!node.datasetOriginalText) {
+          node.datasetOriginalText = node.nodeValue.trim();
+        }
+        const original = node.datasetOriginalText;
+        const leading = node.nodeValue.match(/^\s*/)[0];
+        const trailing = node.nodeValue.match(/\s*$/)[0];
+        node.nodeValue = `${leading}${translateValue(original, lang)}${trailing}`;
+      });
+
+      document.querySelectorAll("[aria-label], img[alt]").forEach((element) => {
+        ["aria-label", "alt"].forEach((attribute) => {
+          if (!element.hasAttribute(attribute)) return;
+          const storedName = `original${attribute.replace("-", "")}`;
+          if (!element.dataset[storedName]) {
+            element.dataset[storedName] = element.getAttribute(attribute);
+          }
+          element.setAttribute(attribute, translateValue(element.dataset[storedName], lang));
+        });
+      });
+
+      languageButtons.forEach((button) => {
+        const isActive = button.dataset.lang === lang;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      const menuIsOpen = navLinks.classList.contains("is-open");
+      menuButton.setAttribute("aria-label", lang === "en"
+        ? (menuIsOpen ? "Close menu" : "Open menu")
+        : (menuIsOpen ? "Затвори меню" : "Отвори меню"));
+
+      localStorage.setItem("kolibare-language", lang);
+      renderBistroContent(window.bistroContent);
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+    });
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", currentLanguage === "en"
+        ? (isOpen ? "Close menu" : "Open menu")
+        : (isOpen ? "Затвори меню" : "Отвори меню"));
+    });
+
+    navLinks.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLAnchorElement) {
+        navLinks.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", currentLanguage === "en" ? "Open menu" : "Отвори меню");
+      }
+    });
+
+    applyLanguage(currentLanguage);
+    loadBistroContent();
+  </script>
+</body>
+</html>

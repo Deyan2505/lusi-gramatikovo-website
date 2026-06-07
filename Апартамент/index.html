@@ -1,0 +1,1846 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Апартамент в центъра на Граматиково | Нощувки в Странджа</title>
+    <meta
+      name="description"
+      content="Нов, модерен апартамент за нощувки в центъра на Граматиково. До 4 гости, 60 кв.м., тераса, Wi-Fi, кухня и гледка към площада и църквата."
+    />
+    <meta property="og:title" content="Апартамент в центъра на Граматиково" />
+    <meta
+      property="og:description"
+      content="Уютен апартамент за до 4 гости в сърцето на Странджа, с тераса, оборудвана кухня и гледка към площада."
+    />
+    <meta property="og:image" content="10264727_138078789_big.jpg" />
+    <meta property="og:type" content="website" />
+    <style>
+      :root {
+        --ink: #17201b;
+        --muted: #5a665e;
+        --paper: #fbfaf6;
+        --surface: #ffffff;
+        --forest: #27533f;
+        --moss: #6f8f52;
+        --clay: #a65f45;
+        --sky: #dbe8ec;
+        --line: rgba(23, 32, 27, 0.14);
+        --shadow: 0 18px 45px rgba(23, 32, 27, 0.16);
+        --max: 1160px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      body.modal-open {
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -80px;
+        z-index: 20;
+        background: var(--surface);
+        color: var(--ink);
+        padding: 10px 14px;
+        border-radius: 6px;
+        transition: top 160ms ease;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 10;
+        color: #fff;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0));
+      }
+
+      .nav {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        font-weight: 760;
+        text-decoration: none;
+        letter-spacing: 0;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 0.93rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        opacity: 0.92;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        opacity: 1;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .lang-switch {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        padding: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(6px);
+      }
+
+      .lang-switch button {
+        min-width: 42px;
+        min-height: 38px;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        background: transparent;
+        font: inherit;
+        font-weight: 760;
+        cursor: pointer;
+      }
+
+      .lang-switch button[aria-pressed="true"] {
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        padding: 12px 18px;
+        font-weight: 720;
+        line-height: 1.1;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-1px);
+      }
+
+      .button-primary {
+        background: var(--forest);
+        color: #fff;
+      }
+
+      .button-primary:hover,
+      .button-primary:focus-visible {
+        background: #1e4433;
+      }
+
+      .button-outline {
+        border-color: var(--forest);
+        color: var(--forest);
+        background: transparent;
+      }
+
+      .button-outline:hover,
+      .button-outline:focus-visible {
+        background: rgba(39, 83, 63, 0.08);
+      }
+
+      .button-whatsapp {
+        background: #1f7a4d;
+        color: #fff;
+      }
+
+      .button-whatsapp:hover,
+      .button-whatsapp:focus-visible {
+        background: #17643e;
+      }
+
+      .button-ghost {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.72);
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(6px);
+      }
+
+      .hero {
+        min-height: 92dvh;
+        position: relative;
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+        color: #fff;
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.32) 56%, rgba(0, 0, 0, 0.12)),
+          url("10264727_138078789_big.jpg") center / cover;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 26%;
+        background: linear-gradient(to bottom, transparent, var(--paper));
+        pointer-events: none;
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        width: min(100%, var(--max));
+        margin: 0 auto;
+        padding: 130px 24px 94px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        font-size: 0.86rem;
+        font-weight: 760;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 820px;
+        margin-bottom: 18px;
+        font-size: clamp(2.5rem, 7vw, 5.9rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 640px;
+        margin-bottom: 28px;
+        font-size: clamp(1.05rem, 2vw, 1.32rem);
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .quick-facts {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(130px, 1fr));
+        gap: 1px;
+        max-width: 760px;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+      }
+
+      .fact {
+        min-height: 86px;
+        padding: 14px;
+        background: rgba(7, 20, 14, 0.38);
+      }
+
+      .fact strong {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.05;
+      }
+
+      .fact span {
+        display: block;
+        margin-top: 6px;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.88rem;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+      }
+
+      section {
+        padding: 82px 24px;
+      }
+
+      .section-inner {
+        width: min(100%, var(--max));
+        margin: 0 auto;
+      }
+
+      .intro {
+        padding-top: 70px;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.78fr);
+        gap: 56px;
+        align-items: start;
+      }
+
+      .kicker {
+        margin-bottom: 10px;
+        color: var(--clay);
+        font-size: 0.82rem;
+        font-weight: 820;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin-bottom: 18px;
+        font-size: clamp(2rem, 4.5vw, 3.6rem);
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .detail-list {
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .detail-list li,
+      .amenity {
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+      }
+
+      .detail-list li {
+        padding: 16px;
+      }
+
+      .detail-list strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .price-panel {
+        position: sticky;
+        top: 94px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+
+      .price {
+        display: flex;
+        align-items: baseline;
+        gap: 9px;
+        margin-bottom: 10px;
+      }
+
+      .price strong {
+        font-size: 2.35rem;
+        line-height: 1;
+      }
+
+      .price span {
+        color: var(--muted);
+      }
+
+      .price-options {
+        display: grid;
+        gap: 10px;
+        margin: 16px 0;
+      }
+
+      .price-option {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #f7f5ef;
+      }
+
+      .price-option span {
+        color: var(--muted);
+      }
+
+      .price-option strong {
+        white-space: nowrap;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .price-panel .button {
+        width: 100%;
+        margin-top: 18px;
+      }
+
+      .band {
+        background: var(--sky);
+      }
+
+      .amenities-grid {
+        margin-top: 34px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .amenity {
+        min-height: 98px;
+        padding: 16px;
+      }
+
+      .amenity svg {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 14px;
+        color: var(--forest);
+      }
+
+      .amenity strong {
+        display: block;
+      }
+
+      .amenity span {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .bistro-section {
+        background: var(--paper);
+      }
+
+      .bistro-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1.22fr);
+        gap: 44px;
+        align-items: center;
+      }
+
+      .bistro-copy .lead {
+        margin-bottom: 24px;
+      }
+
+      .bistro-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 28px 0 0;
+      }
+
+      .bistro-points {
+        margin: 28px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .bistro-points li {
+        border-left: 3px solid var(--moss);
+        padding: 4px 0 4px 14px;
+      }
+
+      .bistro-points strong {
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .bistro-points span {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .bistro-media {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-rows: 132px;
+        gap: 12px;
+        align-items: stretch;
+      }
+
+      .bistro-media figure {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #d8ded8;
+      }
+
+      .bistro-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bistro-media figure:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .bistro-media figure:nth-child(2) {
+        grid-column: span 2;
+      }
+
+      .bistro-media figure:nth-child(4) {
+        grid-column: span 2;
+      }
+
+      .bistro-media figure:nth-child(6) {
+        grid-column: span 2;
+      }
+
+      .gallery-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: end;
+        margin-bottom: 28px;
+      }
+
+      .gallery-head .lead {
+        margin-bottom: 0;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 230px;
+        gap: 12px;
+      }
+
+      .gallery button {
+        position: relative;
+        overflow: hidden;
+        border: 0;
+        border-radius: 8px;
+        padding: 0;
+        background: #d8ded8;
+        cursor: pointer;
+      }
+
+      .gallery button:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 260ms ease;
+      }
+
+      .gallery button:hover img,
+      .gallery button:focus-visible img {
+        transform: scale(1.035);
+      }
+
+      .gallery button:focus-visible,
+      .button:focus-visible {
+        outline: 3px solid #f2c94c;
+        outline-offset: 3px;
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 28px 14px 12px;
+        color: #fff;
+        font-weight: 700;
+        text-align: left;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent);
+      }
+
+      .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 34px;
+      }
+
+      .experience {
+        border-top: 3px solid var(--moss);
+        padding-top: 18px;
+      }
+
+      .experience h3 {
+        margin-bottom: 8px;
+        font-size: 1.28rem;
+      }
+
+      .experience p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .village-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 36px;
+        align-items: start;
+        margin-top: 42px;
+      }
+
+      .village-stat {
+        border-left: 4px solid var(--clay);
+        padding: 6px 0 6px 18px;
+      }
+
+      .village-stat strong {
+        display: block;
+        font-size: clamp(2.4rem, 7vw, 4.8rem);
+        line-height: 0.95;
+      }
+
+      .village-stat span {
+        display: block;
+        margin-top: 10px;
+        color: var(--muted);
+      }
+
+      .village-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .village-card {
+        min-height: 152px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.68);
+      }
+
+      .village-card h3 {
+        margin-bottom: 8px;
+        font-size: 1.12rem;
+      }
+
+      .village-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .source-link {
+        display: inline-flex;
+        margin-top: 24px;
+        color: var(--forest);
+        font-weight: 720;
+        text-underline-offset: 4px;
+      }
+
+      .cta {
+        color: #fff;
+        background:
+          linear-gradient(90deg, rgba(16, 32, 24, 0.86), rgba(16, 32, 24, 0.48)),
+          url("10264727_138078806_big.jpg") center / cover;
+      }
+
+      .cta .section-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.55fr);
+        gap: 40px;
+        align-items: end;
+      }
+
+      .cta h2 {
+        max-width: 800px;
+      }
+
+      .cta p {
+        max-width: 660px;
+        color: rgba(255, 255, 255, 0.86);
+      }
+
+      .cta-box {
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 8px;
+        padding: 22px;
+        background: rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(8px);
+      }
+
+      .cta-box dl {
+        margin: 0;
+        display: grid;
+        gap: 14px;
+      }
+
+      .cta-box dt {
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 0.82rem;
+      }
+
+      .cta-box dd {
+        margin: 2px 0 0;
+        font-weight: 760;
+      }
+
+      .site-footer {
+        padding: 30px 24px;
+        color: var(--muted);
+        background: #f3f1eb;
+      }
+
+      .footer-inner {
+        width: min(100%, var(--max));
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 0.92rem;
+      }
+
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: rgba(8, 12, 10, 0.86);
+      }
+
+      .lightbox.is-open {
+        display: flex;
+      }
+
+      .lightbox figure {
+        width: min(100%, 1060px);
+        margin: 0;
+      }
+
+      .lightbox img {
+        width: 100%;
+        max-height: 82dvh;
+        object-fit: contain;
+        border-radius: 8px;
+        background: #111;
+      }
+
+      .lightbox figcaption {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.86);
+      }
+
+      .lightbox-close {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 6px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.32);
+        cursor: pointer;
+      }
+
+      .lightbox-close:focus-visible {
+        outline: 3px solid #f2c94c;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 900px) {
+        .nav-links a:not(.button) {
+          display: none;
+        }
+
+        .quick-facts,
+        .amenities-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .split,
+        .cta .section-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .bistro-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .price-panel {
+          position: static;
+        }
+
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: 210px;
+        }
+
+        .experience-grid,
+        .village-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .village-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .nav {
+          padding: 14px 16px;
+        }
+
+        .brand {
+          max-width: 145px;
+          line-height: 1.15;
+        }
+
+        .hero {
+          min-height: 88dvh;
+          background-position: 46% center;
+        }
+
+        .hero-inner {
+          padding: 112px 18px 62px;
+        }
+
+        h1 {
+          font-size: 2.65rem;
+        }
+
+        section {
+          padding: 58px 18px;
+        }
+
+        .hero-actions,
+        .gallery-head,
+        .footer-inner {
+          display: grid;
+        }
+
+        .hero-actions .button,
+        .nav .button,
+        .cta .button {
+          width: 100%;
+        }
+
+        .quick-facts,
+        .detail-list,
+        .amenities-grid,
+        .bistro-points,
+        .bistro-media,
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+
+        .bistro-media {
+          grid-auto-rows: 210px;
+        }
+
+        .bistro-media figure:nth-child(n) {
+          grid-column: auto;
+          grid-row: auto;
+        }
+
+        .gallery {
+          grid-auto-rows: 260px;
+        }
+
+        .gallery button:first-child {
+          grid-column: auto;
+          grid-row: auto;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Към съдържанието</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Основна навигация">
+        <a class="brand" href="#">Апартамент Граматиково</a>
+        <div class="nav-links">
+          <a href="#about">Апартамент</a>
+          <a href="#amenities">Удобства</a>
+          <a href="#bistro">Бистро</a>
+          <a href="#gallery">Снимки</a>
+          <a href="#location">Район</a>
+          <div class="lang-switch" aria-label="Избор на език">
+            <button type="button" data-lang="bg" aria-pressed="true">BG</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="button button-ghost" href="#booking">Запитване</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Апартамент в центъра на Граматиково">
+        <div class="hero-inner">
+          <p class="eyebrow">Нощувки в Странджа</p>
+          <h1>Апартамент в центъра на Граматиково</h1>
+          <p class="hero-copy">
+            Новообзаведено място за спокоен престой до 4 гости, с тераса към площада,
+            църквата „Свети Четиридесет мъченици“ и залезите над Странджа.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/359888029267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B2%D0%B0%D0%BC%20%D1%81%D0%B5%20%D0%BE%D1%82%20%D0%B0%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%93%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE.%20%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B5%D0%BD%20%D0%BB%D0%B8%20%D0%B5%20%D0%B7%D0%B0%20%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B4%D0%B0%D1%82%D0%B8%3F"
+              target="_blank"
+              rel="noopener"
+            >
+              Пишете в WhatsApp
+            </a>
+            <a class="button button-ghost" href="#gallery">Разгледайте снимките</a>
+          </div>
+          <div class="quick-facts" aria-label="Ключови данни">
+            <div class="fact">
+              <strong>4</strong>
+              <span>места за настаняване</span>
+            </div>
+            <div class="fact">
+              <strong>60 кв.м.</strong>
+              <span>площ на апартамента</span>
+            </div>
+            <div class="fact">
+              <strong>2 стаи</strong>
+              <span>спалня и дневна</span>
+            </div>
+            <div class="fact">
+              <strong data-cms="priceSummary">от 20 евро</strong>
+              <span data-cms="priceSummaryLabel">на човек при 2+ гости</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="about">
+        <div class="section-inner split">
+          <div>
+            <p class="kicker">В сърцето на селото</p>
+            <h2>Уютна база за бавни сутрини, разходки и вечери на терасата.</h2>
+            <p class="lead">
+              Апартаментът е разположен в центъра на село Граматиково, област Бургас.
+              Интериорът е модерен и практичен: отделна спалня с две единични легла,
+              просторна дневна с разтегателен диван, оборудвана кухня и собствен санитарен възел.
+            </p>
+            <ul class="detail-list">
+              <li>
+                <strong>Подходящ за</strong>
+                Семейства, двойки и приятелски компании до 4 души.
+              </li>
+              <li>
+                <strong>Настаняване</strong>
+                Минимум 1 нощувка, без хазяи в апартамента.
+              </li>
+              <li>
+                <strong>Гледка</strong>
+                Площадът, църквата и западният хоризонт на Странджа.
+              </li>
+              <li>
+                <strong>Храна наблизо</strong>
+                Закуска, обяд и вечеря могат да се уточнят с Бистро Колибаре в Граматиково.
+              </li>
+            </ul>
+          </div>
+
+          <aside class="price-panel" id="booking" aria-label="Цена и резервация">
+            <p class="kicker">Цена</p>
+            <div class="price">
+              <strong data-cms="priceTitle">цени в евро</strong>
+            </div>
+            <div class="price-options" aria-label="Цени за настаняване">
+              <div class="price-option">
+                <span>Единично настаняване</span>
+                <strong data-cms="singlePrice">35 евро</strong>
+              </div>
+              <div class="price-option">
+                <span>Двама или повече гости</span>
+                <strong data-cms="multiPrice">20 евро / човек</strong>
+              </div>
+            </div>
+            <p class="note" data-cms="priceNote">
+              Всички цени са за нощувка и са посочени в евро. Апартаментът е подходящ
+              за до 4 нощуващи.
+            </p>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/359888029267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B2%D0%B0%D0%BC%20%D1%81%D0%B5%20%D0%BE%D1%82%20%D0%B0%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%93%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE.%20%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B5%D0%BD%20%D0%BB%D0%B8%20%D0%B5%20%D0%B7%D0%B0%20%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B4%D0%B0%D1%82%D0%B8%3F"
+              target="_blank"
+              rel="noopener"
+            >
+              Пишете в WhatsApp
+            </a>
+            <p class="note" data-cms="whatsappNote">
+              Директен чат към +359 888 029 267 с готов текст за запитване.
+            </p>
+            <a
+              class="button button-primary"
+              data-cms-link="listing"
+              href="https://www.alo.bg/apartament-v-centara-na-gramatikovo-10264727"
+              target="_blank"
+              rel="noopener"
+            >
+              Вижте обявата
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band" id="amenities">
+        <div class="section-inner">
+          <p class="kicker">Удобства</p>
+          <h2>Всичко важно за няколко дни спокойствие.</h2>
+          <p class="lead">
+            Обявата включва интернет, телевизия, климатик, кухня за ползване, пералня,
+            сушилня, ютия, сешоар, хладилник, кафемашина и тераса.
+          </p>
+
+          <div class="amenities-grid" aria-label="Списък с удобства">
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Wi-Fi и ТВ</strong>
+              <span>Интернет и кабелна/сателитна телевизия.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Оборудвана кухня</strong>
+              <span>Печка, хладилник, посуда и кафемашина.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M4 10h16M6 6h12v12H6zM9 18v3M15 18v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Климатик</strong>
+              <span>Комфорт през топли и прохладни дни.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M7 3h10v18H7zM10 7h4M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Пералня и сушилня</strong>
+              <span>Практично за по-дълъг престой.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12h16M7 12V7h10v5M8 17h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Собствена баня</strong>
+              <span>Самостоятелен санитарен възел с душ.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M5 9h14v9H5zM8 9V6h8v3M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Тераса</strong>
+              <span>Изглед към центъра и залезите.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M7 7h10v12H7zM9 4h6M10 11h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Сешоар и ютия</strong>
+              <span>Малки удобства, които спестяват багаж.</span>
+            </div>
+            <div class="amenity">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M6 19h12M8 19V8a4 4 0 0 1 8 0v11M10 8h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <strong>Кафе сутрин</strong>
+              <span>Кафемашина и спокойна дневна зона.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bistro-section" id="bistro">
+        <div class="section-inner bistro-layout">
+          <div class="bistro-copy">
+            <p class="kicker">Храна към престоя</p>
+            <h2>Апартаментът може да се комбинира с Бистро Колибаре.</h2>
+            <p class="lead">
+              За гостите това означава по-малко планиране и повече време за Странджа:
+              кафе и закуска преди разходка, домашна храна след маршрут или спокойна вечеря
+              в селото. Бистрото е отделно място в Граматиково с домашно приготвена храна,
+              скара, свежи салати и семейна атмосфера.
+            </p>
+            <ul class="bistro-points">
+              <li>
+                <strong>Преди маршрут</strong>
+                <span>Кафе, закуска или бързо уточнение за деня.</span>
+              </li>
+              <li>
+                <strong>След разходка</strong>
+                <span>Топла храна, скара и познати български вкусове.</span>
+              </li>
+              <li>
+                <strong>За група</strong>
+                <span>Възможност за предварителна уговорка при повече гости.</span>
+              </li>
+              <li>
+                <strong>Актуални предложения</strong>
+                <span>Менюто и снимките са отделно представени в сайта на бистрото.</span>
+              </li>
+            </ul>
+            <div class="bistro-actions">
+              <a
+                class="button button-primary"
+                data-cms-link="bistro"
+                href="https://bistro-kolibare.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                Вижте сайта на бистрото
+              </a>
+              <a
+                class="button button-outline"
+                data-wa-type="bistro"
+                href="https://wa.me/359888029267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B2%D0%B0%D0%BC%20%D1%81%D0%B5%20%D0%BE%D1%82%20%D0%B0%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%93%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE%20%D0%B8%20%D0%B2%D1%8A%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%20%D0%B7%D0%B0%20%D1%85%D1%80%D0%B0%D0%BD%D0%B0%20%D0%B2%20%D0%91%D0%B8%D1%81%D1%82%D1%80%D0%BE%20%D0%9A%D0%BE%D0%BB%D0%B8%D0%B1%D0%B0%D1%80%D0%B5."
+                target="_blank"
+                rel="noopener"
+              >
+                Попитайте в WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="bistro-media" aria-label="Снимки от Бистро Колибаре" data-cms="bistroPhotos">
+            <figure>
+              <img
+                src="bistro-kolibare-facade.jpg"
+                alt="Фасада на Бистро Колибаре с външни маси и зелени чадъри"
+                loading="lazy"
+              />
+            </figure>
+            <figure>
+              <img
+                src="bistro-kolibare-veranda.jpg"
+                alt="Покрита веранда с дървена маса пред Бистро Колибаре"
+                loading="lazy"
+              />
+            </figure>
+            <figure>
+              <img
+                src="bistro-kolibare-dish.jpg"
+                alt="Домашна гозба в глинен съд от Бистро Колибаре"
+                loading="lazy"
+              />
+            </figure>
+            <figure>
+              <img
+                src="bistro-kolibare-interior.jpg"
+                alt="Интериор на Бистро Колибаре с маси и бар"
+                loading="lazy"
+              />
+            </figure>
+            <figure>
+              <img
+                src="bistro-kolibare-grill.jpg"
+                alt="Скара с пържени картофи и млечен сос"
+                loading="lazy"
+              />
+            </figure>
+            <figure>
+              <img
+                src="bistro-kolibare-table.jpg"
+                alt="Подредена дълга маса със салати в Бистро Колибаре"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="section-inner">
+          <div class="gallery-head">
+            <div>
+              <p class="kicker">Снимки</p>
+              <h2>Дневна, кухня, спалня, тераса и Странджа около вас.</h2>
+            </div>
+            <p class="lead">
+              Галерията използва всички снимки от папката на апартамента.
+            </p>
+          </div>
+
+          <div class="gallery" data-cms="apartmentGallery">
+            <button type="button" data-full="10264727_138078789_big.jpg" data-caption="Дневна с излаз към терасата">
+              <img src="10264727_138078789_big.jpg" alt="Дневна с телевизор, диван и врата към тераса" loading="lazy" />
+              <span class="caption">Дневна и тераса</span>
+            </button>
+            <button type="button" data-full="10264727_138078790_big.jpg" data-caption="Кът за хранене и разтегателен диван">
+              <img src="10264727_138078790_big.jpg" alt="Кът за хранене и разтегателен диван в дневната" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078792_big.jpg" data-caption="Оборудвана кухня">
+              <img src="10264727_138078792_big.jpg" alt="Кухня с мивка, пералня, шкафове и фурна" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078793_big.jpg" data-caption="Спалня с две единични легла">
+              <img src="10264727_138078793_big.jpg" alt="Спалня с две единични легла и гардероб" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078804_big.jpg" data-caption="Дневна зона с климатик">
+              <img src="10264727_138078804_big.jpg" alt="Дневна зона с разтегнат диван, маса и климатик" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078796_big.jpg" data-caption="Гледка от терасата към площада">
+              <img src="10264727_138078796_big.jpg" alt="Гледка от терасата към центъра на Граматиково и църквата" loading="lazy" />
+              <span class="caption">Гледка към площада</span>
+            </button>
+            <button type="button" data-full="10264727_138078806_big.jpg" data-caption="Залез над Граматиково">
+              <img src="10264727_138078806_big.jpg" alt="Розов залез над Граматиково" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078802_big.jpg" data-caption="Природна разходка край водопад">
+              <img src="10264727_138078802_big.jpg" alt="Водопад и зеленина в района на Странджа" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078803_big.jpg" data-caption="Спалнята от втори ъгъл">
+              <img src="10264727_138078803_big.jpg" alt="Спалня с две единични легла от втори ъгъл" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078795_big.jpg" data-caption="Коридор и връзка между помещенията">
+              <img src="10264727_138078795_big.jpg" alt="Коридор с изглед към дневната" loading="lazy" />
+            </button>
+            <button type="button" data-full="10264727_138078797_big.jpg" data-caption="Антре и баня">
+              <img src="10264727_138078797_big.jpg" alt="Антре с врата към баня" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="location">
+        <div class="section-inner">
+          <p class="kicker">Граматиково и Странджа</p>
+          <h2>Село с гледки, стара памет и истинска странджанска тишина.</h2>
+          <p class="lead">
+            Граматиково е най-голямото село в Природен парк „Странджа“. Намира се
+            на високо било над долината на Велека, с панорами към Резовското било,
+            турска Странджа и вековните дъбово-букови гори на север.
+          </p>
+
+          <div class="experience-grid">
+            <article class="experience">
+              <h3>Панорамно било</h3>
+              <p>
+                Селото е на около 300 м надморска височина, на 25 км от Малко Търново
+                и 68 км от Бургас през местността Босна.
+              </p>
+            </article>
+            <article class="experience">
+              <h3>История наоколо</h3>
+              <p>
+                В околностите има следи от тракийски некрополи и могили, стар римски път,
+                антични селища и рудни находища.
+              </p>
+            </article>
+            <article class="experience">
+              <h3>„Странджа пее“</h3>
+              <p>
+                През 1960 г. тук се провежда първият фолклорен събор-надпяване
+                „Странджа пее“, предшественик на големите национални събори.
+              </p>
+            </article>
+          </div>
+
+          <div class="village-grid">
+            <div class="village-stat">
+              <strong>382</strong>
+              <span>
+                жители са посочени за Граматиково в информацията на Природен парк „Странджа“.
+                Името на селото остава непроменено от основаването му, вероятно през XVI век.
+              </span>
+            </div>
+            <div class="village-cards">
+              <article class="village-card">
+                <h3>Горската сбирка</h3>
+                <p>
+                  В центъра на селото има експозиция за биологичното разнообразие на Странджа
+                  и историята на горското дело в района.
+                </p>
+              </article>
+              <article class="village-card">
+                <h3>Църквата „Св. 40 Мъченици“</h3>
+                <p>
+                  Храмът е паметник на културата. Историята му минава през опожаряване
+                  през 1877 г. и последващо възстановяване.
+                </p>
+              </article>
+              <article class="village-card">
+                <h3>Параклиси и аязма</h3>
+                <p>
+                  Около селото има множество параклиси. „Св. Троица“ е построен върху входа
+                  на естествена пещера, а Голямата аязма е свързана с нестинарските села.
+                </p>
+              </article>
+              <article class="village-card">
+                <h3>Южно-понтийска растителност</h3>
+                <p>
+                  В района могат да се видят странджанска зеленика, джел, рускус, волски език
+                  и други характерни за Странджа видове.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <a
+            class="source-link"
+            href="https://www.strandja.bg/bg/info/62-selo-gramaticovo"
+            target="_blank"
+            rel="noopener"
+          >
+            Източник: Природен парк „Странджа“
+          </a>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="section-inner">
+          <div>
+            <p class="eyebrow">Планирайте престой</p>
+            <h2>Спокойно място в центъра на Граматиково, готово за до 4 гости.</h2>
+            <p>
+              Проверете свободните дати, уточнете хранене при желание и попитайте за отстъпки при
+              повече нощувки.
+            </p>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/359888029267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B2%D0%B0%D0%BC%20%D1%81%D0%B5%20%D0%BE%D1%82%20%D0%B0%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%B2%20%D0%93%D1%80%D0%B0%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D0%BE.%20%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B5%D0%BD%20%D0%BB%D0%B8%20%D0%B5%20%D0%B7%D0%B0%20%D0%B8%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B4%D0%B0%D1%82%D0%B8%3F"
+              target="_blank"
+              rel="noopener"
+            >
+              Пишете в WhatsApp
+            </a>
+          </div>
+          <div class="cta-box">
+            <dl>
+              <div>
+                <dt>Местоположение</dt>
+                <dd>с. Граматиково, област Бургас</dd>
+              </div>
+              <div>
+                <dt>Тип</dt>
+                <dd>Апартамент за нощувки</dd>
+              </div>
+              <div>
+                <dt>Легла</dt>
+                <dd>2 единични легла и разтегателен диван</dd>
+              </div>
+              <div>
+                <dt>Запитвания</dt>
+                <dd data-cms="footerWhatsapp">WhatsApp: +359 888 029 267</dd>
+              </div>
+              <div>
+                <dt>Пушене</dt>
+                <dd>Разрешено според публикуваната обява</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>Апартамент в центъра на Граматиково</span>
+        <span>Данни: локалните папки „Апартамент“ и „Ресторант“, публикуваната обява, Strandja.bg и сайтът на Бистро Колибаре.</span>
+      </div>
+    </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Преглед на снимка">
+      <button class="lightbox-close" type="button" aria-label="Затвори">×</button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </div>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Апартамент в центъра на Граматиково",
+        "description": "Нов, модерен апартамент за нощувки в центъра на Граматиково, подходящ за до 4 гости.",
+        "telephone": "+359888029267",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Граматиково",
+          "addressRegion": "Бургас",
+          "addressCountry": "BG"
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Кухня", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Климатик", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Тераса", "value": true }
+        ]
+      }
+    </script>
+    <script>
+      const i18n = {
+        en: {
+          title: "Apartment in central Gramatikovo | Stays in Strandzha",
+          description:
+            "Modern apartment for stays in central Gramatikovo. Up to 4 guests, 60 sq m, terrace, Wi-Fi, kitchen and views toward the square and church.",
+          whatsappText:
+            "Hello, I am interested in the apartment in Gramatikovo. Is it available for my dates?",
+          bistroWhatsappText:
+            "Hello, I am interested in the apartment in Gramatikovo and the option to use Bistro Kolibare for meals.",
+          text: {
+            "Към съдържанието": "Skip to content",
+            "Апартамент Граматиково": "Gramatikovo Apartment",
+            "Апартамент": "Apartment",
+            "Удобства": "Amenities",
+            "Бистро": "Bistro",
+            "Снимки": "Photos",
+            "Район": "Area",
+            "Запитване": "Inquiry",
+            "Нощувки в Странджа": "Stays in Strandzha",
+            "Апартамент в центъра на Граматиково": "Apartment in central Gramatikovo",
+            "Новообзаведено място за спокоен престой до 4 гости, с тераса към площада, църквата „Свети Четиридесет мъченици“ и залезите над Странджа.":
+              "A newly furnished place for a calm stay for up to 4 guests, with a terrace facing the square, the Church of the Holy Forty Martyrs and the Strandzha sunsets.",
+            "Пишете в WhatsApp": "Message on WhatsApp",
+            "Разгледайте снимките": "View photos",
+            "места за настаняване": "sleeping places",
+            "60 кв.м.": "60 sq m",
+            "площ на апартамента": "apartment area",
+            "2 стаи": "2 rooms",
+            "спалня и дневна": "bedroom and living room",
+            "от 20 евро": "from EUR 20",
+            "на човек при 2+ гости": "per person for 2+ guests",
+            "В сърцето на селото": "In the heart of the village",
+            "Уютна база за бавни сутрини, разходки и вечери на терасата.":
+              "A cozy base for slow mornings, walks and evenings on the terrace.",
+            "Апартаментът е разположен в центъра на село Граматиково, област Бургас. Интериорът е модерен и практичен: отделна спалня с две единични легла, просторна дневна с разтегателен диван, оборудвана кухня и собствен санитарен възел.":
+              "The apartment is located in the center of Gramatikovo village, Burgas region. The interior is modern and practical: a separate bedroom with two single beds, a spacious living room with a sofa bed, an equipped kitchen and a private bathroom.",
+            "Подходящ за": "Suitable for",
+            "Семейства, двойки и приятелски компании до 4 души.":
+              "Families, couples and small groups of up to 4 people.",
+            "Настаняване": "Stay",
+            "Минимум 1 нощувка, без хазяи в апартамента.":
+              "Minimum 1 night, no hosts inside the apartment.",
+            "Гледка": "View",
+            "Площадът, църквата и западният хоризонт на Странджа.":
+              "The square, the church and the western horizon of Strandzha.",
+            "Храна наблизо": "Food nearby",
+            "Закуска, обяд и вечеря могат да се уточнят с Бистро Колибаре в Граматиково.":
+              "Breakfast, lunch and dinner can be arranged with Bistro Kolibare in Gramatikovo.",
+            "Цена": "Price",
+            "цени в евро": "prices in EUR",
+            "Единично настаняване": "Single occupancy",
+            "35 евро": "EUR 35",
+            "Двама или повече гости": "Two or more guests",
+            "20 евро / човек": "EUR 20 / person",
+            "Всички цени са за нощувка и са посочени в евро. Апартаментът е подходящ за до 4 нощуващи.":
+              "All prices are per night and listed in EUR. The apartment is suitable for up to 4 guests.",
+            "Директен чат към +359 888 029 267 с готов текст за запитване.":
+              "Direct chat to +359 888 029 267 with a ready inquiry message.",
+            "Вижте обявата": "View the listing",
+            "Всичко важно за няколко дни спокойствие.": "Everything you need for a few quiet days.",
+            "Обявата включва интернет, телевизия, климатик, кухня за ползване, пералня, сушилня, ютия, сешоар, хладилник, кафемашина и тераса.":
+              "The apartment includes internet, TV, air conditioning, a usable kitchen, washing machine, dryer, iron, hairdryer, refrigerator, coffee machine and terrace.",
+            "Wi-Fi и ТВ": "Wi-Fi and TV",
+            "Интернет и кабелна/сателитна телевизия.": "Internet and cable/satellite TV.",
+            "Оборудвана кухня": "Equipped kitchen",
+            "Печка, хладилник, посуда и кафемашина.": "Stove, refrigerator, tableware and coffee machine.",
+            "Климатик": "Air conditioning",
+            "Комфорт през топли и прохладни дни.": "Comfort on warm and cool days.",
+            "Пералня и сушилня": "Washer and dryer",
+            "Практично за по-дълъг престой.": "Practical for longer stays.",
+            "Собствена баня": "Private bathroom",
+            "Самостоятелен санитарен възел с душ.": "Private bathroom with shower.",
+            "Тераса": "Terrace",
+            "Изглед към центъра и залезите.": "Views toward the center and the sunsets.",
+            "Сешоар и ютия": "Hairdryer and iron",
+            "Малки удобства, които спестяват багаж.": "Small comforts that save luggage space.",
+            "Кафе сутрин": "Morning coffee",
+            "Кафемашина и спокойна дневна зона.": "Coffee machine and a calm living area.",
+            "Храна към престоя": "Food with your stay",
+            "Апартаментът може да се комбинира с Бистро Колибаре.":
+              "The apartment can be combined with Bistro Kolibare.",
+            "За гостите това означава по-малко планиране и повече време за Странджа: кафе и закуска преди разходка, домашна храна след маршрут или спокойна вечеря в селото. Бистрото е отделно място в Граматиково с домашно приготвена храна, скара, свежи салати и семейна атмосфера.":
+              "For guests this means less planning and more time for Strandzha: coffee and breakfast before a walk, homemade food after a route or a relaxed dinner in the village. The bistro is a separate place in Gramatikovo with homemade food, grilled dishes, fresh salads and a family atmosphere.",
+            "Преди маршрут": "Before a route",
+            "Кафе, закуска или бързо уточнение за деня.": "Coffee, breakfast or a quick plan for the day.",
+            "След разходка": "After a walk",
+            "Топла храна, скара и познати български вкусове.": "Warm food, grilled dishes and familiar Bulgarian flavors.",
+            "За група": "For a group",
+            "Възможност за предварителна уговорка при повече гости.": "Option to arrange in advance for more guests.",
+            "Актуални предложения": "Current offers",
+            "Менюто и снимките са отделно представени в сайта на бистрото.":
+              "The menu and photos are presented separately on the bistro website.",
+            "Вижте сайта на бистрото": "Open the bistro website",
+            "Попитайте в WhatsApp": "Ask on WhatsApp",
+            "Дневна, кухня, спалня, тераса и Странджа около вас.":
+              "Living room, kitchen, bedroom, terrace and Strandzha around you.",
+            "Галерията използва всички снимки от папката на апартамента.":
+              "The gallery uses all photos from the apartment folder.",
+            "Дневна и тераса": "Living room and terrace",
+            "Гледка към площада": "View toward the square",
+            "Граматиково и Странджа": "Gramatikovo and Strandzha",
+            "Село с гледки, стара памет и истинска странджанска тишина.":
+              "A village with views, old memory and true Strandzha quiet.",
+            "Граматиково е най-голямото село в Природен парк „Странджа“. Намира се на високо било над долината на Велека, с панорами към Резовското било, турска Странджа и вековните дъбово-букови гори на север.":
+              "Gramatikovo is the largest village in Strandzha Nature Park. It sits on a high ridge above the Veleka valley, with panoramas toward the Rezovo ridge, Turkish Strandzha and the old oak and beech forests to the north.",
+            "Панорамно било": "Panoramic ridge",
+            "Селото е на около 300 м надморска височина, на 25 км от Малко Търново и 68 км от Бургас през местността Босна.":
+              "The village is about 300 m above sea level, 25 km from Malko Tarnovo and 68 km from Burgas via the Bosna area.",
+            "История наоколо": "History nearby",
+            "В околностите има следи от тракийски некрополи и могили, стар римски път, антични селища и рудни находища.":
+              "The surroundings include traces of Thracian necropolises and mounds, an old Roman road, ancient settlements and ore deposits.",
+            "„Странджа пее“": "\"Strandzha Sings\"",
+            "През 1960 г. тук се провежда първият фолклорен събор-надпяване „Странджа пее“, предшественик на големите национални събори.":
+              "In 1960, the first \"Strandzha Sings\" folklore gathering was held here, a predecessor of the large national folklore festivals.",
+            "Горската сбирка": "The Forest Collection",
+            "Църквата „Св. 40 Мъченици“": "Church of the Holy Forty Martyrs",
+            "Параклиси и аязма": "Chapels and holy springs",
+            "Южно-понтийска растителност": "South Pontic vegetation",
+            "Източник: Природен парк „Странджа“": "Source: Strandzha Nature Park",
+            "Планирайте престой": "Plan your stay",
+            "Спокойно място в центъра на Граматиково, готово за до 4 гости.":
+              "A quiet place in central Gramatikovo, ready for up to 4 guests.",
+            "Проверете свободните дати, уточнете хранене при желание и попитайте за отстъпки при повече нощувки.":
+              "Check availability, arrange meals if needed and ask about longer stays.",
+            "Местоположение": "Location",
+            "с. Граматиково, област Бургас": "Gramatikovo village, Burgas region",
+            "Тип": "Type",
+            "Апартамент за нощувки": "Apartment for stays",
+            "Легла": "Beds",
+            "2 единични легла и разтегателен диван": "2 single beds and a sofa bed",
+            "WhatsApp: +359 888 029 267": "WhatsApp: +359 888 029 267",
+            "Пушене": "Smoking",
+            "Разрешено според публикуваната обява": "Allowed according to the published listing",
+            "Апартамент в центъра на Граматиково": "Apartment in central Gramatikovo",
+            "Данни: локалните папки „Апартамент“ и „Ресторант“, публикуваната обява, Strandja.bg и сайтът на Бистро Колибаре.":
+              "Data: local Apartment and Restaurant folders, the published listing, Strandja.bg and the Bistro Kolibare website."
+          }
+        }
+      };
+
+      const originalTextNodes = [];
+      let activeLanguage = "bg";
+
+      function normalizeText(value) {
+        return value.replace(/\s+/g, " ").trim();
+      }
+
+      function replaceNodeText(node, nextText) {
+        const current = node.nodeValue;
+        const leading = current.match(/^\s*/)[0];
+        const trailing = current.match(/\s*$/)[0];
+        node.nodeValue = `${leading}${nextText}${trailing}`;
+      }
+
+      function collectTextNodes() {
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+          acceptNode(node) {
+            const parent = node.parentElement;
+            if (!parent) return NodeFilter.FILTER_REJECT;
+            if (["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
+              return NodeFilter.FILTER_REJECT;
+            }
+            return normalizeText(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+          }
+        });
+
+        let node = walker.nextNode();
+        while (node) {
+          originalTextNodes.push({ node, bg: node.nodeValue, key: normalizeText(node.nodeValue) });
+          node = walker.nextNode();
+        }
+      }
+
+      function updateWhatsAppLinks(lang) {
+        const text = lang === "en" ? i18n.en.whatsappText : "Здравейте, интересувам се от апартамента в Граматиково. Свободен ли е за избраните дати?";
+        const bistroText =
+          lang === "en"
+            ? i18n.en.bistroWhatsappText
+            : "Здравейте, интересувам се от апартамента в Граматиково и възможност за храна в Бистро Колибаре.";
+
+        document.querySelectorAll('a[href^="https://wa.me/359888029267"]').forEach((link) => {
+          const currentText = normalizeText(link.textContent);
+          const message = link.dataset.waType === "bistro" || currentText.includes("Bistro") || currentText.includes("бистрото") || currentText.includes("Попитайте")
+            ? bistroText
+            : text;
+          link.href = `https://wa.me/359888029267?text=${encodeURIComponent(message)}`;
+        });
+      }
+
+      function formatEuro(value, lang, suffix = "") {
+        const number = Number(value);
+        const safeValue = Number.isFinite(number) ? number : value;
+        if (lang === "en") return `EUR ${safeValue}${suffix}`;
+        return `${safeValue} евро${suffix === " / person" ? " / човек" : ""}`;
+      }
+
+      function setText(selector, value) {
+        const element = document.querySelector(selector);
+        if (element && value !== undefined && value !== null) {
+          element.textContent = value;
+        }
+      }
+
+      function setHref(selector, value) {
+        if (!value) return;
+        document.querySelectorAll(selector).forEach((element) => {
+          element.href = value;
+        });
+      }
+
+      function imagePath(src) {
+        if (!src) return "";
+        if (/^(https?:)?\/\//.test(src) || src.startsWith("/")) return src;
+        return src;
+      }
+
+      function renderApartmentGallery(items = []) {
+        const gallery = document.querySelector('[data-cms="apartmentGallery"]');
+        if (!gallery || !items.length) return;
+        gallery.innerHTML = items
+          .map((item, index) => {
+            const caption = activeLanguage === "en" ? item.captionEn || item.captionBg : item.captionBg;
+            const alt = activeLanguage === "en" ? item.altEn || item.altBg || caption : item.altBg || caption;
+            const visibleCaption = index === 0 || index === 5 ? `<span class="caption">${caption}</span>` : "";
+            const src = imagePath(item.image);
+            return `
+              <button type="button" data-full="${src}" data-caption="${caption}">
+                <img src="${src}" alt="${alt}" loading="lazy" />
+                ${visibleCaption}
+              </button>
+            `;
+          })
+          .join("");
+      }
+
+      function renderBistroPhotos(items = []) {
+        const media = document.querySelector('[data-cms="bistroPhotos"]');
+        if (!media || !items.length) return;
+        media.innerHTML = items
+          .map((item) => {
+            const alt = activeLanguage === "en" ? item.altEn || item.altBg : item.altBg || item.altEn || "";
+            return `
+              <figure>
+                <img src="${imagePath(item.image)}" alt="${alt}" loading="lazy" />
+              </figure>
+            `;
+          })
+          .join("");
+      }
+
+      function renderApartmentContent(content) {
+        if (!content) return;
+        const pricing = content.pricing || {};
+        const contact = content.contact || {};
+        const links = content.links || {};
+        const single = pricing.singleOccupancy ?? 35;
+        const multi = pricing.multiOccupancyPerPerson ?? 20;
+        const maxGuests = pricing.maxGuests ?? 4;
+
+        setText('[data-cms="priceSummary"]', activeLanguage === "en" ? `from EUR ${multi}` : `от ${multi} евро`);
+        setText(
+          '[data-cms="priceSummaryLabel"]',
+          activeLanguage === "en" ? "per person for 2+ guests" : "на човек при 2+ гости"
+        );
+        setText('[data-cms="priceTitle"]', activeLanguage === "en" ? "prices in EUR" : "цени в евро");
+        setText('[data-cms="singlePrice"]', formatEuro(single, activeLanguage));
+        setText('[data-cms="multiPrice"]', formatEuro(multi, activeLanguage, " / person"));
+        setText(
+          '[data-cms="priceNote"]',
+          activeLanguage === "en"
+            ? `All prices are per night and listed in EUR. The apartment is suitable for up to ${maxGuests} guests.`
+            : `Всички цени са за нощувка и са посочени в евро. Апартаментът е подходящ за до ${maxGuests} нощуващи.`
+        );
+        if (contact.whatsappDisplay) {
+          setText(
+            '[data-cms="whatsappNote"]',
+            activeLanguage === "en"
+              ? `Direct chat to ${contact.whatsappDisplay} with a ready inquiry message.`
+              : `Директен чат към ${contact.whatsappDisplay} с готов текст за запитване.`
+          );
+          setText('[data-cms="footerWhatsapp"]', `WhatsApp: ${contact.whatsappDisplay}`);
+        }
+        setHref('[data-cms-link="listing"]', links.listing);
+        setHref('[data-cms-link="bistro"]', links.bistro);
+
+        renderApartmentGallery(content.gallery);
+        renderBistroPhotos(content.bistroPhotos);
+        updateWhatsAppLinks(activeLanguage);
+      }
+
+      async function fetchJsonFrom(paths) {
+        for (const path of paths) {
+          try {
+            const response = await fetch(path, { cache: "no-store" });
+            if (response.ok) return await response.json();
+          } catch (error) {
+            // The static fallback stays visible when local file serving cannot fetch JSON.
+          }
+        }
+        return null;
+      }
+
+      async function loadApartmentContent() {
+        const content = await fetchJsonFrom([
+          "../content/apartment.json",
+          "/content/apartment.json",
+          "content/apartment.json"
+        ]);
+        window.apartmentContent = content;
+        renderApartmentContent(content);
+      }
+
+      function setLanguage(lang) {
+        activeLanguage = lang;
+        const isEnglish = lang === "en";
+        document.documentElement.lang = isEnglish ? "en" : "bg";
+        document.title = isEnglish ? i18n.en.title : "Апартамент в центъра на Граматиково | Нощувки в Странджа";
+        document
+          .querySelector('meta[name="description"]')
+          ?.setAttribute(
+            "content",
+            isEnglish
+              ? i18n.en.description
+              : "Нов, модерен апартамент за нощувки в центъра на Граматиково. До 4 гости, 60 кв.м., тераса, Wi-Fi, кухня и гледка към площада и църквата."
+          );
+
+        originalTextNodes.forEach(({ node, bg, key }) => {
+          if (isEnglish && i18n.en.text[key]) {
+            replaceNodeText(node, i18n.en.text[key]);
+          } else {
+            node.nodeValue = bg;
+          }
+        });
+
+        document.querySelectorAll(".lang-switch button").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+        });
+
+        updateWhatsAppLinks(lang);
+        renderApartmentContent(window.apartmentContent);
+        localStorage.setItem("apartmentLanguage", lang);
+      }
+
+      collectTextNodes();
+      document.querySelectorAll(".lang-switch button").forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+      setLanguage(localStorage.getItem("apartmentLanguage") || "bg");
+      loadApartmentContent();
+    </script>
+    <script>
+      const lightbox = document.querySelector(".lightbox");
+      const lightboxImage = lightbox.querySelector("img");
+      const lightboxCaption = lightbox.querySelector("figcaption");
+      const lightboxClose = lightbox.querySelector(".lightbox-close");
+
+      function openLightbox(button) {
+        const src = button.dataset.full;
+        const caption = button.dataset.caption;
+        const img = button.querySelector("img");
+
+        lightboxImage.src = src;
+        lightboxImage.alt = img.alt;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add("is-open");
+        document.body.classList.add("modal-open");
+        lightboxClose.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+        lightboxImage.src = "";
+      }
+
+      document.querySelector(".gallery")?.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (button) openLightbox(button);
+      });
+
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+          closeLightbox();
+        }
+      });
+    </script>
+  </body>
+</html>

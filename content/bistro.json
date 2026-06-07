@@ -1,0 +1,113 @@
+{
+  "contact": {
+    "phone": "+359888029267",
+    "phoneDisplay": "+359 88 802 9267",
+    "whatsappNumber": "359888029267",
+    "email": "lussikalin177@gmail.com",
+    "facebook": "https://www.facebook.com/BistroKolibare",
+    "addressBg": "ул. Петрова Нива 29, Граматиково",
+    "addressEn": "29 Petrova Niva St., Gramatikovo"
+  },
+  "menuNoteBg": "За актуални цени, дневни предложения или храна за група пишете в WhatsApp или попитайте на място.",
+  "menuNoteEn": "For current prices, daily offers or group meals, message on WhatsApp or ask on site.",
+  "menu": [
+    {
+      "categoryBg": "Супи",
+      "categoryEn": "Soups",
+      "items": [
+        {
+          "nameBg": "Шкембе чорба",
+          "nameEn": "Tripe soup",
+          "descriptionBg": "Класика за любителите на топла супа.",
+          "descriptionEn": "A classic for lovers of warm soup."
+        },
+        {
+          "nameBg": "Пилешка супа",
+          "nameEn": "Chicken soup",
+          "descriptionBg": "Домашна, лека и подходяща за обяд.",
+          "descriptionEn": "Homemade, light and suitable for lunch."
+        },
+        {
+          "nameBg": "Таратор",
+          "nameEn": "Tarator",
+          "descriptionBg": "Свеж избор за топлите дни.",
+          "descriptionEn": "A fresh choice for warm days."
+        }
+      ]
+    },
+    {
+      "categoryBg": "Салати и разядки",
+      "categoryEn": "Salads and spreads",
+      "items": [
+        {
+          "nameBg": "Шопска салата",
+          "nameEn": "Shopska salad",
+          "descriptionBg": "Домати, краставици, сирене и свежа подправка.",
+          "descriptionEn": "Tomatoes, cucumbers, cheese and fresh herbs."
+        },
+        {
+          "nameBg": "Печени чушки с чесън",
+          "nameEn": "Roasted peppers with garlic",
+          "descriptionBg": "Ароматни печени чушки с домашен характер.",
+          "descriptionEn": "Aromatic roasted peppers with a homemade feel."
+        }
+      ]
+    },
+    {
+      "categoryBg": "Скара",
+      "categoryEn": "Grill",
+      "items": [
+        {
+          "nameBg": "Кюфте / кебапче",
+          "nameEn": "Meatball / kebapche",
+          "descriptionBg": "Най-познатият вкус от скарата.",
+          "descriptionEn": "The most familiar Bulgarian grill taste."
+        },
+        {
+          "nameBg": "Пилешка пържола",
+          "nameEn": "Chicken steak",
+          "descriptionBg": "Лека и сочна порция на скара.",
+          "descriptionEn": "A light and juicy grilled portion."
+        },
+        {
+          "nameBg": "Свинска пържола",
+          "nameEn": "Pork steak",
+          "descriptionBg": "Класическо месно предложение.",
+          "descriptionEn": "A classic meat dish."
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "image": "718754953_122100784575355405_9158575733724901696_n.jpg",
+      "altBg": "Фасада на Бистро Колибаре с външни маси и чадъри",
+      "altEn": "Bistro Kolibare facade with outdoor tables and umbrellas"
+    },
+    {
+      "image": "710799439_122100784677355405_435484373201384865_n.jpg",
+      "altBg": "Покрита веранда с дървени маси пред бистрото",
+      "altEn": "Covered veranda with wooden tables in front of the bistro"
+    },
+    {
+      "image": "718118258_122100784491355405_3533497227148573105_n.jpg",
+      "altBg": "Интериор на Бистро Колибаре с маси и бар",
+      "altEn": "Bistro Kolibare interior with tables and bar"
+    },
+    {
+      "image": "710827516_122100784731355405_4554133691777618941_n.jpg",
+      "altBg": "Дълга маса, подготвена за гости и тържество",
+      "altEn": "Long table prepared for guests and a celebration"
+    },
+    {
+      "image": "719222340_2218100672378057_7977238443996969050_n.jpg",
+      "altBg": "Топла домашна гозба в глинен съд",
+      "altEn": "Warm homemade dish in a clay pot"
+    },
+    {
+      "image": "719029978_122100784839355405_2459956735258601257_n.jpg",
+      "altBg": "Скара с пържени картофи и млечен сос",
+      "altEn": "Grilled sausages with fried potatoes and yoghurt sauce"
+    }
+  ]
+}
