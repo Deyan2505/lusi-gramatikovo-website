@@ -5,7 +5,7 @@
   },
   "pricing": {
     "currency": "EUR",
-    "singleOccupancy": 36,
+    "singleOccupancy": 34,
     "multiOccupancyPerPerson": 20,
     "maxGuests": 4
   },
