@@ -4,6 +4,164 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Админ панел | Граматиково</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --admin-bg: #0e1412;
+        --admin-panel: #151d1a;
+        --admin-panel-soft: #1c2723;
+        --admin-field: #0f1715;
+        --admin-border: rgba(224, 232, 225, 0.16);
+        --admin-text: #eef5ef;
+        --admin-muted: #a7b6ad;
+        --admin-accent: #4fd19b;
+        --admin-accent-strong: #20bf7a;
+      }
+
+      html,
+      body,
+      #nc-root {
+        min-height: 100%;
+        background: var(--admin-bg) !important;
+      }
+
+      body {
+        margin: 0;
+        color: var(--admin-text) !important;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif !important;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background:
+          linear-gradient(145deg, rgba(79, 209, 155, 0.12), transparent 38%),
+          radial-gradient(circle at 80% 8%, rgba(166, 95, 69, 0.2), transparent 34%),
+          var(--admin-bg);
+      }
+
+      main,
+      section,
+      article,
+      aside,
+      [class*="App"],
+      [class*="View"],
+      [class*="Container"],
+      [class*="Pane"],
+      [class*="Panel"] {
+        background-color: transparent !important;
+      }
+
+      [class*="Toolbar"],
+      [class*="TopBar"],
+      [class*="EditorToolbar"] {
+        background: rgba(15, 23, 21, 0.92) !important;
+        border-color: var(--admin-border) !important;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.32) !important;
+        backdrop-filter: blur(14px);
+      }
+
+      [class*="ControlPane"],
+      [class*="EditorControl"],
+      [class*="ObjectControl"],
+      [class*="NestedObject"],
+      [class*="ListControl"],
+      [class*="Card"],
+      [class*="Collection"],
+      [class*="EntryListing"],
+      [class*="Sidebar"] {
+        color: var(--admin-text) !important;
+        background: rgba(21, 29, 26, 0.94) !important;
+        border-color: var(--admin-border) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22) !important;
+      }
+
+      [class*="ControlPane"] {
+        max-width: 920px !important;
+        margin-inline: auto !important;
+      }
+
+      [class*="ControlLabel"],
+      label,
+      legend,
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      span,
+      a {
+        color: inherit !important;
+        letter-spacing: 0 !important;
+      }
+
+      label,
+      [class*="ControlLabel"] {
+        color: var(--admin-muted) !important;
+        font-size: 0.78rem !important;
+        font-weight: 750 !important;
+        text-transform: uppercase;
+      }
+
+      input,
+      textarea,
+      select {
+        min-height: 46px !important;
+        color: var(--admin-text) !important;
+        background: var(--admin-field) !important;
+        border: 1px solid var(--admin-border) !important;
+        border-radius: 7px !important;
+        box-shadow: none !important;
+      }
+
+      textarea {
+        min-height: 110px !important;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: var(--admin-accent) !important;
+        outline: 3px solid rgba(79, 209, 155, 0.18) !important;
+      }
+
+      button,
+      [role="button"] {
+        border-radius: 7px !important;
+        font-weight: 750 !important;
+      }
+
+      button:not([disabled]),
+      [role="button"]:not([aria-disabled="true"]) {
+        border-color: var(--admin-border) !important;
+      }
+
+      button[class*="primary"],
+      [class*="Button"][class*="primary"],
+      [class*="Published"],
+      [class*="publish"] {
+        color: #062016 !important;
+        background: var(--admin-accent) !important;
+      }
+
+      a {
+        color: var(--admin-accent) !important;
+      }
+
+      svg {
+        color: currentColor !important;
+      }
+
+      [class*="Preview"],
+      [class*="preview"] {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
