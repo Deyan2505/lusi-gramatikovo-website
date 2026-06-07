@@ -44,18 +44,6 @@
           var(--admin-bg);
       }
 
-      main,
-      section,
-      article,
-      aside,
-      [class*="App"],
-      [class*="View"],
-      [class*="Container"],
-      [class*="Pane"],
-      [class*="Panel"] {
-        background-color: transparent !important;
-      }
-
       [class*="Toolbar"],
       [class*="TopBar"],
       [class*="EditorToolbar"] {
@@ -65,7 +53,6 @@
         backdrop-filter: blur(14px);
       }
 
-      [class*="ControlPane"],
       [class*="EditorControl"],
       [class*="ObjectControl"],
       [class*="NestedObject"],
@@ -79,11 +66,6 @@
         border-color: var(--admin-border) !important;
         border-radius: 8px !important;
         box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22) !important;
-      }
-
-      [class*="ControlPane"] {
-        max-width: 920px !important;
-        margin-inline: auto !important;
       }
 
       [class*="ControlLabel"],
@@ -155,11 +137,6 @@
 
       svg {
         color: currentColor !important;
-      }
-
-      [class*="Preview"],
-      [class*="preview"] {
-        display: none !important;
       }
     </style>
   </head>
